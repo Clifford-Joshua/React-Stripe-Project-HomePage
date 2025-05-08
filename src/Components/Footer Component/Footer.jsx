@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Footer = () => {
   const CurrentYear = new Date().getFullYear();
   return (
-    <Wrapper>
+    <Wrapper className="bg-gray-50">
       {/* =================================================== */}
       {/* div container */}
       <div className=" relative h-[25vh] lg:h-[55vh]">
@@ -46,7 +46,7 @@ const Footer = () => {
 
         {/* ================================================= */}
         {/* stripe footer container */}
-        <div className="w-[100%] absolute h-[80%] bg-gray-100 bottom-0 flex justify-center items-center flex-col gap-[0.2rem] footer_container">
+        <div className="w-[100%] absolute h-[80%] bg-white bottom-0 flex justify-center items-center flex-col gap-[0.2rem] footer_container">
           {/* =========================================== */}
           {/* stripe text */}
           <h1 className="text-[1.7rem] md:text-[2.5rem] font-bold mt-6">
