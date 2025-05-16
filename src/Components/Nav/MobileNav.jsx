@@ -8,7 +8,7 @@ import { OpenModal } from "../../Features/NavBars/NavSlice";
 const MobileNav = () => {
   const dispatch = useDispatch();
   return (
-    <Wrapper className="border border-red-700 py-[1rem]">
+    <Wrapper className=" py-[1rem]">
       <div className="flex justify-between item-center ">
         <h2 className="text-[1.4rem] hover:text-gray-400 font-bold ">stripe</h2>
 
