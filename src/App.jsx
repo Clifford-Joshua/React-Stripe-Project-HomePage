@@ -3,6 +3,8 @@ import ScrollToTop from "./ScrollToTop";
 import WebPage from "./Pages/HomePage/Home";
 import ErrorPage from "./Pages/Errors/Error";
 import SharedComponent from "./SharedComponent";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -16,6 +18,7 @@ const App = () => {
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
+      <ToastContainer />
     </BrowserRouter>
   );
 };

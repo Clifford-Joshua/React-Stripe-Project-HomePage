@@ -5,7 +5,22 @@
   --breakpoint-lg: 1024px;
 }
 
+body {
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-family: "Roboto", sans-serif;
+}
 
-.test{
-  color: #8001dbde;
+/* remove scrollbar */
+.hide_scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.test {
+  color: #ffffffd8;
 }
