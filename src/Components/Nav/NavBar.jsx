@@ -35,7 +35,7 @@ const NavBar = () => {
   };
 
   return (
-    <Wrapper className="absolute w-[100%] z-[5] border" ref={navContainer}>
+    <Wrapper className="absolute w-[100%] z-[5]" ref={navContainer}>
       <nav
         className="p-[1.5rem] lg:p-[0.8rem]"
         onMouseOver={removeDesktopModal}
