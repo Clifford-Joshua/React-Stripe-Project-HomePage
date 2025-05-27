@@ -16,7 +16,7 @@ const Developers = () => {
           className="text-[1.05rem] lg:text-[0.9rem] flex gap-[0.5rem]  p-[1rem] lg:p-[1.2rem] bg-white group"
           onClick={() => toast.error(`Sorry link isn't functional`)}
         >
-          <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem] ">
+          <div className="text-blue-400 group-hover:text-gray-950 cursor-pointer text-[1.3rem] ">
             <FaBookOpen />
           </div>
 
@@ -38,15 +38,15 @@ const Developers = () => {
                   Get started
                 </h2>
 
-                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950">
+                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950 cursor-pointer">
                   Prebuilt checkout
                 </p>
 
-                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950">
+                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950 cursor-pointer">
                   Libraries and SDKs
                 </p>
 
-                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950">
+                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950 cursor-pointer">
                   App integrations
                 </p>
               </div>
@@ -58,15 +58,15 @@ const Developers = () => {
                   Guides
                 </h2>
 
-                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950">
+                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950 cursor-pointer">
                   Accepts online payments
                 </p>
 
-                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950">
+                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950 cursor-pointer">
                   Manage subscriptions
                 </p>
 
-                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950">
+                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950 cursor-pointer">
                   Send payments
                 </p>
               </div>
@@ -80,10 +80,10 @@ const Developers = () => {
           {/* ====================================================== */}
           {/* Full Api reference*/}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
-            <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
+            <div className="text-blue-400 group-hover:text-gray-950  text-[1.3rem]">
               <FiAlignJustify />
             </div>
             <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
@@ -94,10 +94,10 @@ const Developers = () => {
           {/* ====================================================== */}
           {/* API status */}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
-            <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
+            <div className="text-blue-400 group-hover:text-gray-950  text-[1.3rem]">
               <AiFillSlackCircle />
             </div>
             <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
@@ -108,10 +108,10 @@ const Developers = () => {
           {/* ====================================================== */}
           {/* API changelog */}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
-            <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
+            <div className="text-blue-400 group-hover:text-gray-950  text-[1.3rem]">
               <FiActivity />
             </div>
             <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
@@ -122,10 +122,10 @@ const Developers = () => {
           {/* ====================================================== */}
           {/*Build on stripe Apps */}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
-            <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
+            <div className="text-blue-400 group-hover:text-gray-950  text-[1.3rem]">
               <IoCopy />
             </div>
             <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">

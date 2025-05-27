@@ -32,7 +32,7 @@ const Products = () => {
             <div className="flex flex-col  gap-[1rem] lg:grid lg:grid-cols-[repeat(2,_minmax(330px,_1fr))]">
               {/* ====================================================== */}
               {/* Global Payments */}
-              <div className="flex gap-[0.7rem]">
+              <div className="flex gap-[0.7rem] cursor-pointer">
                 <div className="p-[0.2rem]">
                   <img
                     src={Payment}
@@ -97,7 +97,7 @@ const Products = () => {
                 {/* ====================================================== */}
                 {/* Terminal */}
                 <div
-                  className="flex gap-[0.7rem] group"
+                  className="flex gap-[0.7rem] group cursor-pointer"
                   onClick={() => toast.error(`Sorry link isn't functional`)}
                 >
                   <div className="p-[0.2rem]">
@@ -120,7 +120,7 @@ const Products = () => {
                 {/* ====================================================== */}
                 {/* Radar */}
                 <div
-                  className="flex gap-[0.7rem] group"
+                  className="flex gap-[0.7rem] group cursor-pointer"
                   onClick={() => toast.error(`Sorry link isn't functional`)}
                 >
                   <div className="p-[0.2rem]">
@@ -143,7 +143,7 @@ const Products = () => {
                 {/* ====================================================== */}
                 {/* Authorization */}
                 <div
-                  className="flex gap-[0.7rem] group"
+                  className="flex gap-[0.7rem] group cursor-pointer"
                   onClick={() => toast.error(`Sorry link isn't functional`)}
                 >
                   <div className="p-[0.2rem]">
@@ -177,7 +177,7 @@ const Products = () => {
               {/* ====================================================== */}
               {/* Connect */}
               <div
-                className="flex gap-[0.7rem] group"
+                className="flex gap-[0.7rem] group cursor-pointer"
                 onClick={() => toast.error(`Sorry link isn't functional`)}
               >
                 <div className="p-[0.2rem]">
@@ -200,7 +200,7 @@ const Products = () => {
               {/* ====================================================== */}
               {/* Global Payouts */}
               <div
-                className="flex gap-[0.7rem] group"
+                className="flex gap-[0.7rem] group cursor-pointer"
                 onClick={() => toast.error(`Sorry link isn't functional`)}
               >
                 <div className="p-[0.2rem]">
@@ -223,7 +223,7 @@ const Products = () => {
               {/* ====================================================== */}
               {/* Capital for platforms */}
               <div
-                className="flex gap-[0.7rem] group"
+                className="flex gap-[0.7rem] group cursor-pointer"
                 onClick={() => toast.error(`Sorry link isn't functional`)}
               >
                 <div className="p-[0.2rem]">
@@ -246,7 +246,7 @@ const Products = () => {
               {/* ====================================================== */}
               {/* Issuing */}
               <div
-                className="flex gap-[0.7rem] group"
+                className="flex gap-[0.7rem] group cursor-pointer"
                 onClick={() => toast.error(`Sorry link isn't functional`)}
               >
                 <div className="p-[0.2rem]">
@@ -279,7 +279,7 @@ const Products = () => {
               {/* ====================================================== */}
               {/* Billing */}
               <div
-                className="flex gap-[0.7rem] group"
+                className="flex gap-[0.7rem] group cursor-pointer"
                 onClick={() => toast.error(`Sorry link isn't functional`)}
               >
                 <div className="p-[0.2rem]">
@@ -302,7 +302,7 @@ const Products = () => {
               {/* ====================================================== */}
               {/* Revenue Recognition */}
               <div
-                className="flex gap-[0.7rem] group"
+                className="flex gap-[0.7rem] group cursor-pointer"
                 onClick={() => toast.error(`Sorry link isn't functional`)}
               >
                 <div className="p-[0.2rem]">
@@ -325,7 +325,7 @@ const Products = () => {
               {/* ====================================================== */}
               {/* Tax */}
               <div
-                className="flex gap-[0.7rem] group"
+                className="flex gap-[0.7rem] group cursor-pointer"
                 onClick={() => toast.error(`Sorry link isn't functional`)}
               >
                 <div className="p-[0.2rem]">
@@ -348,7 +348,7 @@ const Products = () => {
               {/* ====================================================== */}
               {/* Invoicing */}
               <div
-                className="flex gap-[0.7rem] group"
+                className="flex gap-[0.7rem] group cursor-pointer"
                 onClick={() => toast.error(`Sorry link isn't functional`)}
               >
                 <div className="p-[0.2rem]">
@@ -371,7 +371,7 @@ const Products = () => {
               {/* ====================================================== */}
               {/*  Sigma*/}
               <div
-                className="flex gap-[0.7rem] group"
+                className="flex gap-[0.7rem] group cursor-pointer"
                 onClick={() => toast.error(`Sorry link isn't functional`)}
               >
                 <div className="p-[0.2rem]">
@@ -394,7 +394,7 @@ const Products = () => {
               {/* ====================================================== */}
               {/* Data Pipeline */}
               <div
-                className="flex gap-[0.7rem] group"
+                className="flex gap-[0.7rem] group cursor-pointer"
                 onClick={() => toast.error(`Sorry link isn't functional`)}
               >
                 <div className="p-[0.2rem]">

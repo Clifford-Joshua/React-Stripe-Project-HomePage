@@ -32,7 +32,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* enterprises */}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
@@ -46,7 +46,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* startups */}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950 ">
@@ -72,7 +72,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* ecommerce */}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950">
@@ -86,7 +86,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* saas */}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950">
@@ -98,7 +98,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* retail*/}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950">
@@ -110,7 +110,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* platforms */}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950">
@@ -124,7 +124,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* marketplaces */}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950">
@@ -150,7 +150,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* Finance automation */}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950">
@@ -164,7 +164,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* Embedded finance*/}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950">
@@ -178,7 +178,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* Global businesses */}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950">
@@ -192,7 +192,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* Crypto*/}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950">
@@ -204,7 +204,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* Creator economy */}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950">
@@ -218,7 +218,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* AI companies */}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950">
@@ -244,7 +244,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* Stripe app marketplaces */}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950">
@@ -258,7 +258,7 @@ const Solutions = () => {
             {/* ====================================================== */}
             {/* partners */}
             <div
-              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group cursor-pointer"
               onClick={() => toast.error(`Sorry link isn't functional`)}
             >
               <div className="text-blue-400 group-hover:text-gray-950">
