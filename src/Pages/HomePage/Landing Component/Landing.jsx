@@ -1,8 +1,9 @@
 import React from "react";
+import IntroText from "./IntroText";
+import styled from "styled-components";
+import { useDispatch } from "react-redux";
 import Stripe from "../../../assets/Images/Stripe-Color.jpg";
 import { CloseDesktopModal } from "../../../Features/NavBars/NavSlice";
-import { useDispatch } from "react-redux";
-import styled from "styled-components";
 const Landing = () => {
   const dispatch = useDispatch();
 
@@ -15,6 +16,12 @@ const Landing = () => {
           className="absolute w-[100%] h-[100%] object-cover"
         />
         <div className="w-[100%] h-[100%] bg-white absolute clip_div"></div>
+
+        {/* ============================================================= */}
+        {/* Landing Page Text */}
+
+        <IntroText />
+        {/* ============================================================= */}
       </div>
     </Wrapper>
   );

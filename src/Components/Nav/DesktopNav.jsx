@@ -43,7 +43,7 @@ const DesktopNav = () => {
 
   return (
     <Wrapper>
-      <div className="flex justify-center items-center gap-[1.5rem] lg:gap-[7rem]">
+      <div className="flex justify-center items-center gap-[1.5rem] lg:gap-[7rem] navLink-container">
         <div>
           <ul className="flex items-center gap-[1rem]  lg:gap-[2.2rem]">
             <h2 className="font-extrabold text-[1rem] lg:text-[1.35rem] hover:text-gray-400 cursor-pointer">
