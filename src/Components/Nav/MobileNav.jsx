@@ -34,7 +34,7 @@ const Wrapper = styled.div`
   /* ====================================================== */
   /* Ipad View */
   /* ====================================================== */
-  @media screen and (width >= 764px) {
+  @media screen and (width >= 1024px) {
     display: none;
   }
 

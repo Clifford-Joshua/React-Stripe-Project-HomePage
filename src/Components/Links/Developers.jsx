@@ -8,12 +8,12 @@ import { FaBookOpen } from "react-icons/fa6";
 
 const Developers = () => {
   return (
-    <Wrapper className="pb-[4rem]  bg-slate-50 ">
+    <Wrapper className="pb-[4rem] lg:pb-[0]  bg-slate-50">
       <div>
         {/* ====================================================== */}
         {/* By Stage */}
         <div
-          className="text-[1.05rem] flex gap-[0.5rem]  p-[1rem] bg-white group "
+          className="text-[1.05rem] lg:text-[0.9rem] flex gap-[0.5rem]  p-[1rem] lg:p-[1.2rem] bg-white group"
           onClick={() => toast.error(`Sorry link isn't functional`)}
         >
           <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem] ">
@@ -23,53 +23,60 @@ const Developers = () => {
           {/* ====================================================== */}
           {/* Documentation */}
           <div className="flex flex-col gap-[0.6rem]">
-            <h2 className="capitalize font-bold">Documentation</h2>
-
-            {/* ====================================================== */}
-            {/* Get Started */}
-            <div className="flex flex-col gap-[0.8rem]">
-              <h2 className="uppercase text-[0.9rem] font-[600] text-gray-800">
-                Get started
-              </h2>
-
-              <p className="text-[0.98rem] text-gray-600 font-[500] hover:text-gray-950">
-                Prebuilt checkout
-              </p>
-
-              <p className="text-[0.98rem] text-gray-600 font-[500] hover:text-gray-950">
-                Libraries and SDKs
-              </p>
-
-              <p className="text-[0.98rem] text-gray-600 font-[500] hover:text-gray-950">
-                App integrations
+            <div className="lg:pb-[0.6rem]">
+              <h2 className="capitalize font-bold">Documentation</h2>
+              <p className="hidden lg:block text-slate-400 font-[545] text-[0.9rem]">
+                Start integrating Stripe’s products and tools
               </p>
             </div>
 
-            {/* ====================================================== */}
-            {/* Guides */}
-            <div className="flex flex-col gap-[0.8rem]">
-              <h2 className="uppercase text-[0.9rem] font-[600] pt-[0.6rem] text-gray-800">
-                Guides
-              </h2>
+            <div className="flex flex-col  lg:grid lg:grid-cols-[repeat(2,_minmax(250px,_1fr))] lg:items-center lg:justify-center  gap-[0.6rem] lg:gap-[0.2rem]">
+              {/* ====================================================== */}
+              {/* Get Started */}
+              <div className="flex flex-col gap-[0.8rem] lg:gap-[0.5rem]">
+                <h2 className="uppercase text-[0.9rem] lg:text-[0.75rem] font-[600] text-gray-800">
+                  Get started
+                </h2>
 
-              <p className="text-[0.98rem] text-gray-600 font-[500] hover:text-gray-950">
-                Accepts online payments
-              </p>
+                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950">
+                  Prebuilt checkout
+                </p>
 
-              <p className="text-[0.98rem] text-gray-600 font-[500] hover:text-gray-950">
-                Manage subscriptions
-              </p>
+                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950">
+                  Libraries and SDKs
+                </p>
 
-              <p className="text-[0.98rem] text-gray-600 font-[500] hover:text-gray-950">
-                Send payments
-              </p>
+                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950">
+                  App integrations
+                </p>
+              </div>
+
+              {/* ====================================================== */}
+              {/* Guides */}
+              <div className="flex flex-col gap-[0.8rem] lg:gap-[0.5rem]">
+                <h2 className="uppercase text-[0.9rem] lg:text-[0.75rem] font-[600] pt-[0.6rem] lg:pt-[0] text-gray-800">
+                  Guides
+                </h2>
+
+                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950">
+                  Accepts online payments
+                </p>
+
+                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950">
+                  Manage subscriptions
+                </p>
+
+                <p className="text-[0.98rem] lg:text-[0.85rem] text-gray-600 font-[500] hover:text-gray-950">
+                  Send payments
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
         {/* ====================================================== */}
         {/* slate color section */}
-        <div className=" p-[1rem] py-[2.5rem] flex flex-col gap-[1.4rem]">
+        <div className=" p-[1rem] py-[2.5rem] lg:py-[1.2rem] flex flex-col gap-[1.4rem] lg:grid lg:grid-cols-[repeat(2,_minmax(250px,_1fr))]">
           {/* ====================================================== */}
           {/* Full Api reference*/}
           <div
@@ -79,7 +86,7 @@ const Developers = () => {
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <FiAlignJustify />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
               Full Api reference
             </h3>
           </div>
@@ -93,7 +100,7 @@ const Developers = () => {
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <AiFillSlackCircle />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
               API status
             </h3>
           </div>
@@ -107,7 +114,7 @@ const Developers = () => {
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <FiActivity />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
               API changelog
             </h3>
           </div>
@@ -121,7 +128,7 @@ const Developers = () => {
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <IoCopy />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
               Build on stripe Apps
             </h3>
           </div>

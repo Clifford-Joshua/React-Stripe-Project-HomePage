@@ -4,9 +4,11 @@ import { LocalData } from "../../Local Data/NavData";
 
 const initialState = {
   title: "",
+  location: {},
   isLinkOpen: false,
   isModalOpen: false,
   isNavLinksClicked: false,
+  isDesktopModalOpen: false,
 };
 
 const NavSlice = createSlice({
@@ -24,14 +26,34 @@ const NavSlice = createSlice({
     CloseModal: (state) => {
       state.isModalOpen = false;
     },
+    OpenDesktopModal: (state) => {
+      state.isDesktopModalOpen = true;
+    },
+    CloseDesktopModal: (state) => {
+      state.isDesktopModalOpen = false;
+    },
     OpenSubNavLink: (state, action) => {
       state.isNavLinksClicked = true;
       state.title = action.payload;
     },
+    OpenDesktopNav: (state, action) => {
+      state.title = action.payload;
+    },
+    setLocation: (state, action) => {
+      state.location = action.payload;
+    },
   },
 });
 
-export const { ChangeTitleHeader, OpenModal, CloseModal, OpenSubNavLink } =
-  NavSlice.actions;
+export const {
+  ChangeTitleHeader,
+  OpenModal,
+  CloseModal,
+  OpenSubNavLink,
+  setLocation,
+  OpenDesktopNav,
+  OpenDesktopModal,
+  CloseDesktopModal,
+} = NavSlice.actions;
 
 export default NavSlice.reducer;

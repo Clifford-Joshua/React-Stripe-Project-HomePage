@@ -20,443 +20,467 @@ import styled from "styled-components";
 const Products = () => {
   return (
     <Wrapper>
-      <div className="pb-[5rem]  bg-slate-50 flex flex-col gap-[0.5rem]">
-        {/* ====================================================== */}
-        {/* Global Payments */}
-        <div className="bg-white p-[1rem]">
-          <h2 className="uppercase font-bold text-[0.9rem] py-[0.8rem] text-gray-700">
-            Global payments
-          </h2>
+      <div className="pb-[5rem] lg:pb-0  bg-slate-50 flex flex-col lg:flex-row gap-[0.5rem] ">
+        <div className="   flex flex-col  gap-[0.5rem] lg:gap-[0.3rem]">
+          {/* ====================================================== */}
+          {/* Global Payments */}
+          <div className="bg-white p-[1rem]">
+            <h2 className="uppercase font-bold text-[0.9rem] lg:text-[0.8rem] py-[0.8rem] text-gray-700">
+              Global payments
+            </h2>
 
-          <div className="flex flex-col gap-[1rem] ">
-            {/* ====================================================== */}
-            {/* Global Payments */}
-            <div className="flex gap-[0.7rem]">
-              <div className="p-[0.2rem]">
-                <img
-                  src={Payment}
-                  alt="Payment image"
-                  className="w-[35px] h-[35px] object-cover"
-                />
+            <div className="flex flex-col  gap-[1rem] lg:grid lg:grid-cols-[repeat(2,_minmax(330px,_1fr))]">
+              {/* ====================================================== */}
+              {/* Global Payments */}
+              <div className="flex gap-[0.7rem]">
+                <div className="p-[0.2rem]">
+                  <img
+                    src={Payment}
+                    alt="Payment image"
+                    className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px]  object-cover"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-[0.5rem] group/head">
+                  <article
+                    onClick={() => toast.error(`Sorry link isn't functional`)}
+                  >
+                    <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem]  text-gray-800">
+                      payments
+                    </h2>
+                    <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem]  group-hover/head:text-gray-900">
+                      Online payments
+                    </p>
+                  </article>
+
+                  <div className="flex flex-col gap-[0.4rem]">
+                    <div
+                      className="flex gap-[0.7rem] text-[0.9rem]  p-[0.5rem]  rounded-[10px] bg-gray-100 group"
+                      onClick={() => toast.error(`Sorry link isn't functional`)}
+                    >
+                      <p className="font-[500]  capitalize lg:text-[0.75rem]">
+                        payment links
+                      </p>
+                      <p className=" text-gray-500  lg:text-[0.7rem] group-hover:text-gray-950">
+                        . No-code payments
+                      </p>
+                    </div>
+
+                    <div
+                      className="flex gap-[0.7rem] text-[0.9rem]  p-[0.5rem]  rounded-[10px] bg-gray-100 group"
+                      onClick={() => toast.error(`Sorry link isn't functional`)}
+                    >
+                      <p className="font-[500]  capitalize lg:text-[0.75rem]">
+                        checkout
+                      </p>
+                      <p className=" text-gray-500 lg:text-[0.7rem] group-hover:text-gray-950">
+                        . Prebuilt payment form
+                      </p>
+                    </div>
+
+                    <div
+                      className="flex gap-[0.7rem] text-[0.9rem]  p-[0.5rem]  rounded-[10px] bg-gray-100 group"
+                      onClick={() => toast.error(`Sorry link isn't functional`)}
+                    >
+                      <p className="font-[500] capitalize lg:text-[0.75rem]">
+                        elements
+                      </p>
+                      <p className=" text-gray-500  lg:text-[0.7rem] group-hover:text-gray-950">
+                        . Flexible UI components
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div className="flex flex-col gap-[0.5rem] group/head">
-                <article
+              <div className="flex flex-col gap-[1rem]">
+                {/* ====================================================== */}
+                {/* Terminal */}
+                <div
+                  className="flex gap-[0.7rem] group"
                   onClick={() => toast.error(`Sorry link isn't functional`)}
                 >
-                  <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                    payments
-                  </h2>
-                  <p className="font-[490] text-gray-400 text-[1.02rem] group-hover/head:text-gray-900">
-                    Online payments
-                  </p>
-                </article>
-
-                <div className="flex flex-col gap-[0.4rem]">
-                  <div
-                    className="flex gap-[0.7rem] text-[0.9rem]  p-[0.5rem]  rounded-[10px] bg-gray-100 group"
-                    onClick={() => toast.error(`Sorry link isn't functional`)}
-                  >
-                    <p className="font-[500]  capitalize">payment links</p>
-                    <p className=" text-gray-500  group-hover:text-gray-950">
-                      . No-code payments
-                    </p>
+                  <div className="p-[0.2rem]">
+                    <img
+                      src={Terminal}
+                      alt="Payment image"
+                      className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px] object-cover"
+                    />
                   </div>
-
-                  <div
-                    className="flex gap-[0.7rem] text-[0.9rem]  p-[0.5rem]  rounded-[10px] bg-gray-100 group"
-                    onClick={() => toast.error(`Sorry link isn't functional`)}
-                  >
-                    <p className="font-[500]  capitalize">checkout</p>
-                    <p className=" text-gray-500 group-hover:text-gray-950">
-                      . Prebuilt payment form
+                  <article>
+                    <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem] text-gray-800">
+                      Terminal
+                    </h2>
+                    <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
+                      In-person payments
                     </p>
-                  </div>
+                  </article>
+                </div>
 
-                  <div
-                    className="flex gap-[0.7rem] text-[0.9rem]  p-[0.5rem]  rounded-[10px] bg-gray-100 group"
-                    onClick={() => toast.error(`Sorry link isn't functional`)}
-                  >
-                    <p className="font-[500] capitalize">elements</p>
-                    <p className=" text-gray-500  group-hover:text-gray-950">
-                      . Flexible UI components
-                    </p>
+                {/* ====================================================== */}
+                {/* Radar */}
+                <div
+                  className="flex gap-[0.7rem] group"
+                  onClick={() => toast.error(`Sorry link isn't functional`)}
+                >
+                  <div className="p-[0.2rem]">
+                    <img
+                      src={Radar}
+                      alt="Payment image"
+                      className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px] object-cover"
+                    />
                   </div>
+                  <article>
+                    <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem] text-gray-800">
+                      Radar
+                    </h2>
+                    <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem] transition duration-400 ease-in-out group-hover:text-gray-950">
+                      Fraud Prevention
+                    </p>
+                  </article>
+                </div>
+
+                {/* ====================================================== */}
+                {/* Authorization */}
+                <div
+                  className="flex gap-[0.7rem] group"
+                  onClick={() => toast.error(`Sorry link isn't functional`)}
+                >
+                  <div className="p-[0.2rem]">
+                    <img
+                      src={Author}
+                      alt="Payment image"
+                      className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px] object-cover"
+                    />
+                  </div>
+                  <article>
+                    <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem] text-gray-800">
+                      Authorization
+                    </h2>
+                    <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem]  transition duration-400 ease-in-out   group-hover:text-gray-950">
+                      Acceptance optimizations
+                    </p>
+                  </article>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="flex flex-col gap-[1rem]">
+          {/* ====================================================== */}
+          {/* Money Management */}
+          <div className="bg-white p-[1rem]">
+            <h2 className="uppercase font-bold text-[0.9rem] lg:text-[0.8rem] py-[0.8rem] text-gray-700">
+              Money management
+            </h2>
+
+            <div className="flex flex-col gap-[1rem] lg:grid lg:grid-cols-[repeat(2,_minmax(330px,_1fr))]">
               {/* ====================================================== */}
-              {/* Terminal */}
+              {/* Connect */}
               <div
                 className="flex gap-[0.7rem] group"
                 onClick={() => toast.error(`Sorry link isn't functional`)}
               >
                 <div className="p-[0.2rem]">
                   <img
-                    src={Terminal}
+                    src={Connect}
                     alt="Payment image"
-                    className="w-[35px] h-[35px] object-cover"
+                    className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px] object-cover"
                   />
                 </div>
                 <article>
-                  <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                    Terminal
+                  <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem] text-gray-800">
+                    Connect
                   </h2>
-                  <p className="font-[490] text-gray-400 text-[1.02rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
-                    In-person payments
+                  <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
+                    Payments for platforms
                   </p>
                 </article>
               </div>
 
               {/* ====================================================== */}
-              {/* Radar */}
+              {/* Global Payouts */}
               <div
                 className="flex gap-[0.7rem] group"
                 onClick={() => toast.error(`Sorry link isn't functional`)}
               >
                 <div className="p-[0.2rem]">
                   <img
-                    src={Radar}
+                    src={Treasury}
                     alt="Payment image"
-                    className="w-[35px] h-[35px] object-cover"
+                    className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px] object-cover"
                   />
                 </div>
                 <article>
-                  <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                    Radar
+                  <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem] text-gray-800">
+                    Global Payouts
                   </h2>
-                  <p className="font-[490] text-gray-400 text-[1.02rem] transition duration-400 ease-in-out group-hover:text-gray-950">
-                    Fraud Prevention
+                  <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
+                    Send money to third parties
                   </p>
                 </article>
               </div>
 
               {/* ====================================================== */}
-              {/* Authorization */}
+              {/* Capital for platforms */}
               <div
                 className="flex gap-[0.7rem] group"
                 onClick={() => toast.error(`Sorry link isn't functional`)}
               >
                 <div className="p-[0.2rem]">
                   <img
-                    src={Author}
+                    src={Capital}
                     alt="Payment image"
-                    className="w-[35px] h-[35px] object-cover"
+                    className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px] object-cover"
                   />
                 </div>
                 <article>
-                  <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                    Authorization
+                  <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem] text-gray-800">
+                    Capital for platforms
                   </h2>
-                  <p className="font-[490] text-gray-400 text-[1.02rem]  transition duration-400 ease-in-out   group-hover:text-gray-950">
-                    Acceptance optimizations
+                  <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
+                    Customer financing
+                  </p>
+                </article>
+              </div>
+
+              {/* ====================================================== */}
+              {/* Issuing */}
+              <div
+                className="flex gap-[0.7rem] group"
+                onClick={() => toast.error(`Sorry link isn't functional`)}
+              >
+                <div className="p-[0.2rem]">
+                  <img
+                    src={Issuing}
+                    alt="Payment image"
+                    className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px] object-cover"
+                  />
+                </div>
+                <article>
+                  <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem] text-gray-800">
+                    Issuing
+                  </h2>
+                  <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
+                    Physical and virtual cards
                   </p>
                 </article>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* ====================================================== */}
-        {/* Money Management */}
-        <div className="bg-white p-[1rem]">
-          <h2 className="uppercase font-bold text-[0.9rem] py-[0.8rem] text-gray-700">
-            Money management
-          </h2>
+          {/* ====================================================== */}
+          {/* Revenue */}
+          <div className="bg-white p-[1rem]">
+            <h2 className="uppercase font-bold text-[0.9rem] lg:text-[0.8rem] py-[0.8rem] text-gray-700">
+              revenue and finance automation
+            </h2>
 
-          <div className="flex flex-col gap-[1rem]">
-            {/* ====================================================== */}
-            {/* Connect */}
-            <div
-              className="flex gap-[0.7rem] group"
-              onClick={() => toast.error(`Sorry link isn't functional`)}
-            >
-              <div className="p-[0.2rem]">
-                <img
-                  src={Connect}
-                  alt="Payment image"
-                  className="w-[35px] h-[35px] object-cover"
-                />
+            <div className="flex flex-col gap-[1rem] lg:grid lg:grid-cols-[repeat(2,_minmax(330px,_1fr))]">
+              {/* ====================================================== */}
+              {/* Billing */}
+              <div
+                className="flex gap-[0.7rem] group"
+                onClick={() => toast.error(`Sorry link isn't functional`)}
+              >
+                <div className="p-[0.2rem]">
+                  <img
+                    src={Billing}
+                    alt="Payment image"
+                    className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px] object-cover"
+                  />
+                </div>
+                <article>
+                  <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem] text-gray-800">
+                    Billing
+                  </h2>
+                  <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
+                    Subscriptions and usage-based
+                  </p>
+                </article>
               </div>
-              <article>
-                <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                  Connect
-                </h2>
-                <p className="font-[490] text-gray-400 text-[1.02rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
-                  Payments for platforms
-                </p>
-              </article>
-            </div>
 
-            {/* ====================================================== */}
-            {/* Global Payouts */}
-            <div
-              className="flex gap-[0.7rem] group"
-              onClick={() => toast.error(`Sorry link isn't functional`)}
-            >
-              <div className="p-[0.2rem]">
-                <img
-                  src={Treasury}
-                  alt="Payment image"
-                  className="w-[35px] h-[35px] object-cover"
-                />
+              {/* ====================================================== */}
+              {/* Revenue Recognition */}
+              <div
+                className="flex gap-[0.7rem] group"
+                onClick={() => toast.error(`Sorry link isn't functional`)}
+              >
+                <div className="p-[0.2rem]">
+                  <img
+                    src={Revenue}
+                    alt="Payment image"
+                    className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px] object-cover"
+                  />
+                </div>
+                <article>
+                  <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem] text-gray-800">
+                    Revenue Recognition
+                  </h2>
+                  <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
+                    Accounting automation
+                  </p>
+                </article>
               </div>
-              <article>
-                <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                  Global Payouts
-                </h2>
-                <p className="font-[490] text-gray-400 text-[1.02rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
-                  Send money to third parties
-                </p>
-              </article>
-            </div>
 
-            {/* ====================================================== */}
-            {/* Capital for platforms */}
-            <div
-              className="flex gap-[0.7rem] group"
-              onClick={() => toast.error(`Sorry link isn't functional`)}
-            >
-              <div className="p-[0.2rem]">
-                <img
-                  src={Capital}
-                  alt="Payment image"
-                  className="w-[35px] h-[35px] object-cover"
-                />
+              {/* ====================================================== */}
+              {/* Tax */}
+              <div
+                className="flex gap-[0.7rem] group"
+                onClick={() => toast.error(`Sorry link isn't functional`)}
+              >
+                <div className="p-[0.2rem]">
+                  <img
+                    src={Tax}
+                    alt="Payment image"
+                    className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px] object-cover"
+                  />
+                </div>
+                <article>
+                  <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem] text-gray-800">
+                    Tax
+                  </h2>
+                  <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
+                    Sales tax & VAT automation
+                  </p>
+                </article>
               </div>
-              <article>
-                <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                  Capital for platforms
-                </h2>
-                <p className="font-[490] text-gray-400 text-[1.02rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
-                  Customer financing
-                </p>
-              </article>
-            </div>
 
-            {/* ====================================================== */}
-            {/* Issuing */}
-            <div
-              className="flex gap-[0.7rem] group"
-              onClick={() => toast.error(`Sorry link isn't functional`)}
-            >
-              <div className="p-[0.2rem]">
-                <img
-                  src={Issuing}
-                  alt="Payment image"
-                  className="w-[35px] h-[35px] object-cover"
-                />
+              {/* ====================================================== */}
+              {/* Invoicing */}
+              <div
+                className="flex gap-[0.7rem] group"
+                onClick={() => toast.error(`Sorry link isn't functional`)}
+              >
+                <div className="p-[0.2rem]">
+                  <img
+                    src={Invoicing}
+                    alt="Payment image"
+                    className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px] object-cover"
+                  />
+                </div>
+                <article>
+                  <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem] text-gray-800">
+                    Invoicing
+                  </h2>
+                  <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
+                    Online invoices
+                  </p>
+                </article>
               </div>
-              <article>
-                <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                  Issuing
-                </h2>
-                <p className="font-[490] text-gray-400 text-[1.02rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
-                  Physical and virtual cards
-                </p>
-              </article>
-            </div>
-          </div>
-        </div>
 
-        {/* ====================================================== */}
-        {/* Revenue */}
-        <div className="bg-white p-[1rem]">
-          <h2 className="uppercase font-bold text-[0.9rem] py-[0.8rem] text-gray-700">
-            revenue and finance automation
-          </h2>
-
-          <div className="flex flex-col gap-[1rem]">
-            {/* ====================================================== */}
-            {/* Billing */}
-            <div
-              className="flex gap-[0.7rem] group"
-              onClick={() => toast.error(`Sorry link isn't functional`)}
-            >
-              <div className="p-[0.2rem]">
-                <img
-                  src={Billing}
-                  alt="Payment image"
-                  className="w-[35px] h-[35px] object-cover"
-                />
+              {/* ====================================================== */}
+              {/*  Sigma*/}
+              <div
+                className="flex gap-[0.7rem] group"
+                onClick={() => toast.error(`Sorry link isn't functional`)}
+              >
+                <div className="p-[0.2rem]">
+                  <img
+                    src={Sigma}
+                    alt="Payment image"
+                    className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px] object-cover"
+                  />
+                </div>
+                <article>
+                  <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem] text-gray-800">
+                    Sigma
+                  </h2>
+                  <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
+                    Custom reports
+                  </p>
+                </article>
               </div>
-              <article>
-                <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                  Billing
-                </h2>
-                <p className="font-[490] text-gray-400 text-[1.02rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
-                  Subscriptions and usage-based
-                </p>
-              </article>
-            </div>
 
-            {/* ====================================================== */}
-            {/* Revenue Recognition */}
-            <div
-              className="flex gap-[0.7rem] group"
-              onClick={() => toast.error(`Sorry link isn't functional`)}
-            >
-              <div className="p-[0.2rem]">
-                <img
-                  src={Revenue}
-                  alt="Payment image"
-                  className="w-[35px] h-[35px] object-cover"
-                />
+              {/* ====================================================== */}
+              {/* Data Pipeline */}
+              <div
+                className="flex gap-[0.7rem] group"
+                onClick={() => toast.error(`Sorry link isn't functional`)}
+              >
+                <div className="p-[0.2rem]">
+                  <img
+                    src={Data}
+                    alt="Payment image"
+                    className="w-[35px] h-[35px] lg:w-[28px] lg:h-[28px] object-cover"
+                  />
+                </div>
+                <article>
+                  <h2 className="font-bold capitalize text-[1rem] lg:text-[0.9rem] text-gray-800">
+                    Data Pipeline
+                  </h2>
+                  <p className="font-[490] text-gray-400 text-[1.02rem] lg:text-[0.85rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
+                    Data sync
+                  </p>
+                </article>
               </div>
-              <article>
-                <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                  Revenue Recognition
-                </h2>
-                <p className="font-[490] text-gray-400 text-[1.02rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
-                  Accounting automation
-                </p>
-              </article>
-            </div>
-
-            {/* ====================================================== */}
-            {/* Tax */}
-            <div
-              className="flex gap-[0.7rem] group"
-              onClick={() => toast.error(`Sorry link isn't functional`)}
-            >
-              <div className="p-[0.2rem]">
-                <img
-                  src={Tax}
-                  alt="Payment image"
-                  className="w-[35px] h-[35px] object-cover"
-                />
-              </div>
-              <article>
-                <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                  Tax
-                </h2>
-                <p className="font-[490] text-gray-400 text-[1.02rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
-                  Sales tax & VAT automation
-                </p>
-              </article>
-            </div>
-
-            {/* ====================================================== */}
-            {/* Invoicing */}
-            <div
-              className="flex gap-[0.7rem] group"
-              onClick={() => toast.error(`Sorry link isn't functional`)}
-            >
-              <div className="p-[0.2rem]">
-                <img
-                  src={Invoicing}
-                  alt="Payment image"
-                  className="w-[35px] h-[35px] object-cover"
-                />
-              </div>
-              <article>
-                <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                  Invoicing
-                </h2>
-                <p className="font-[490] text-gray-400 text-[1.02rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
-                  Online invoices
-                </p>
-              </article>
-            </div>
-
-            {/* ====================================================== */}
-            {/*  Sigma*/}
-            <div
-              className="flex gap-[0.7rem] group"
-              onClick={() => toast.error(`Sorry link isn't functional`)}
-            >
-              <div className="p-[0.2rem]">
-                <img
-                  src={Sigma}
-                  alt="Payment image"
-                  className="w-[35px] h-[35px] object-cover"
-                />
-              </div>
-              <article>
-                <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                  Sigma
-                </h2>
-                <p className="font-[490] text-gray-400 text-[1.02rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
-                  Custom reports
-                </p>
-              </article>
-            </div>
-
-            {/* ====================================================== */}
-            {/* Data Pipeline */}
-            <div
-              className="flex gap-[0.7rem] group"
-              onClick={() => toast.error(`Sorry link isn't functional`)}
-            >
-              <div className="p-[0.2rem]">
-                <img
-                  src={Data}
-                  alt="Payment image"
-                  className="w-[35px] h-[35px] object-cover"
-                />
-              </div>
-              <article>
-                <h2 className="font-bold capitalize text-[1rem] text-gray-800">
-                  Data Pipeline
-                </h2>
-                <p className="font-[490] text-gray-400 text-[1.02rem] transition duration-400 ease-in-out  group-hover:text-gray-950">
-                  Data sync
-                </p>
-              </article>
             </div>
           </div>
         </div>
 
         {/* ====================================================== */}
         {/* More */}
-        <div className=" p-[1rem]">
-          <h2 className="uppercase font-bold text-[0.9rem] py-[0.8rem] text-gray-700">
+        <div className=" p-[1rem] md:pr-[6rem] md:pl-[1.5rem]">
+          <h2 className="uppercase font-bold text-[0.9rem] lg:text[0.85rem] py-[0.8rem] text-gray-700">
             more
           </h2>
 
-          <div className="flex flex-col gap-[0.5rem]">
+          <div className="flex flex-col gap-[0.5rem] lg:gap-[0.7rem]">
             {/* ====================================================== */}
             {/* Payment methods */}
-            <div className="text-[0.9rem]">
-              <h2 className="font-bold">Payment methods</h2>
-              <p className="text-gray-400 ">Access to 100+ globally</p>
+            <div className="text-[0.9rem] lg:text-[0.85rem]">
+              <h2 className="font-bold md:font-[550] md:text-gray-800">
+                Payment methods
+              </h2>
+              <p className="text-gray-400 md:hidden ">
+                Access to 100+ globally
+              </p>
             </div>
 
             {/* ====================================================== */}
             {/* Link */}
-            <div className="text-[0.9rem]">
-              <h2 className="font-bold">Link</h2>
-              <p className="text-gray-400 ">Accelerated checkout</p>
+            <div className="text-[0.9rem] lg:text-[0.85rem">
+              <h2 className="font-bold md:font-[550] md:text-gray-800">Link</h2>
+              <p className="text-gray-400  md:hidden">Accelerated checkout</p>
             </div>
 
             {/* ====================================================== */}
             {/* Financial Connections */}
-            <div className="text-[0.9rem]">
-              <h2 className="font-bold">Financial Connections</h2>
-              <p className="text-gray-400 ">Linked financial account data</p>
+            <div className="text-[0.9rem] lg:text-[0.85rem">
+              <h2 className="font-bold md:font-[550] md:text-gray-800">
+                Financial Connections
+              </h2>
+              <p className="text-gray-400 md:hidden ">
+                Linked financial account data
+              </p>
             </div>
 
             {/* ====================================================== */}
             {/*Identity  */}
-            <div className="text-[0.9rem]">
-              <h2 className="font-bold">Identity</h2>
-              <p className="text-gray-400 ">Online identity verification</p>
+            <div className="text-[0.9rem] lg:text-[0.85rem">
+              <h2 className="font-bold md:font-[550] md:text-gray-800">
+                Identity
+              </h2>
+              <p className="text-gray-400  md:hidden">
+                Online identity verification
+              </p>
             </div>
 
             {/* ====================================================== */}
             {/* Atlas */}
-            <div className="text-[0.9rem]">
-              <h2 className="font-bold">Atlas</h2>
-              <p className="text-gray-400 ">Startup incorporation</p>
+            <div className="text-[0.9rem] lg:text-[0.85rem">
+              <h2 className="font-bold md:font-[550] md:text-gray-800">
+                Atlas
+              </h2>
+              <p className="text-gray-400 md:hidden ">Startup incorporation</p>
             </div>
 
             {/* ====================================================== */}
             {/* Treasury */}
-            <div className="text-[0.9rem]">
-              <h2 className="font-bold">Treasury</h2>
-              <p className="text-gray-400 ">Financial accounts</p>
+            <div className="text-[0.9rem] lg:text-[0.85rem">
+              <h2 className="font-bold md:font-[550] md:text-gray-800">
+                Treasury
+              </h2>
+              <p className="text-gray-400 md:hidden ">Financial accounts</p>
             </div>
           </div>
         </div>

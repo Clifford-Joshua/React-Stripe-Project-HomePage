@@ -18,218 +18,256 @@ import styled from "styled-components";
 const Solutions = () => {
   return (
     <Wrapper>
-      <div className="pb-[4rem]  bg-slate-50 flex flex-col gap-[0.4rem]">
+      <div className="pb-[4rem] lg:pb-0  bg-slate-50 flex flex-col gap-[0.4rem] lg:gap-[0.3rem]">
         {/* ====================================================== */}
         {/* By Stage */}
-        <div className="bg-white  p-[1rem] flex flex-col gap-[1.4rem]">
+        <div className="bg-white  p-[1rem] lg:p-[1.5rem] flex flex-col gap-[1.4rem]">
           {/* ====================================================== */}
           {/* Header */}
-          <p className="font-[600] uppercase text-[0.9rem]">by stage</p>
+          <p className="font-[600] uppercase text-[0.9rem] lg:text-[0.8rem]">
+            by stage
+          </p>
 
-          {/* ====================================================== */}
-          {/* enterprises */}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
-              <PiBuildings />
+          <div className="flex flex-col gap-[1.4rem] lg:gap-[0.8rem] lg:grid lg:grid-cols-[repeat(2,_minmax(280px,_1fr))]">
+            {/* ====================================================== */}
+            {/* enterprises */}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
+                <PiBuildings />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">
+                enterprises
+              </h2>
             </div>
-            <h2 className="capitalize font-bold">enterprises</h2>
-          </div>
 
-          {/* ====================================================== */}
-          {/* startups */}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950 ">
-              <IoRocket />
+            {/* ====================================================== */}
+            {/* startups */}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950 ">
+                <IoRocket />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">
+                startups
+              </h2>
             </div>
-            <h2 className="capitalize font-bold">startups</h2>
           </div>
         </div>
 
         {/* ====================================================== */}
         {/* Global Payments */}
-        <div className="bg-white  p-[1rem] flex flex-col gap-[1.4rem]">
+        <div className="bg-white  p-[1rem] lg:p-[1.5rem] flex flex-col gap-[1.4rem]">
           {/* ====================================================== */}
           {/* Header */}
-          <p className="font-[600] uppercase text-[0.9rem]">
+          <p className="font-[600] uppercase text-[0.9rem] lg:text-[0.8rem]">
             by business model
           </p>
 
-          {/* ====================================================== */}
-          {/* ecommerce */}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950">
-              <FaBookDead />
+          <div className="flex flex-col gap-[1.4rem] lg:gap-[0.8rem] lg:grid lg:grid-cols-[repeat(2,_minmax(280px,_1fr))]">
+            {/* ====================================================== */}
+            {/* ecommerce */}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950">
+                <FaBookDead />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">
+                ecommerce
+              </h2>
             </div>
-            <h2 className="capitalize font-bold">ecommerce</h2>
-          </div>
 
-          {/* ====================================================== */}
-          {/* saas */}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950">
-              <TfiReload />
+            {/* ====================================================== */}
+            {/* saas */}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950">
+                <TfiReload />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">saas</h2>
             </div>
-            <h2 className="capitalize font-bold">saas</h2>
-          </div>
 
-          {/* ====================================================== */}
-          {/* retail*/}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950">
-              <FaInbox />
+            {/* ====================================================== */}
+            {/* retail*/}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950">
+                <FaInbox />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">retail</h2>
             </div>
-            <h2 className="capitalize font-bold">retail</h2>
-          </div>
 
-          {/* ====================================================== */}
-          {/* platforms */}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950">
-              <HiDatabase />
+            {/* ====================================================== */}
+            {/* platforms */}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950">
+                <HiDatabase />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">
+                platforms
+              </h2>
             </div>
-            <h2 className="capitalize font-bold">platforms</h2>
-          </div>
 
-          {/* ====================================================== */}
-          {/* marketplaces */}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950">
-              <IoStorefrontSharp />
+            {/* ====================================================== */}
+            {/* marketplaces */}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950">
+                <IoStorefrontSharp />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">
+                marketplaces
+              </h2>
             </div>
-            <h2 className="capitalize font-bold">marketplaces</h2>
-          </div>
-        </div>
-
-        {/* ====================================================== */}
-        {/* Global Payments */}
-        <div className="bg-white  p-[1rem] flex flex-col gap-[1.4rem]">
-          {/* ====================================================== */}
-          {/* Header */}
-          <p className="font-[600] uppercase text-[0.9rem]">by use case</p>
-
-          {/* ====================================================== */}
-          {/* Finance automation */}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950">
-              <MdBarChart />
-            </div>
-            <h2 className="capitalize font-bold">Finance automation</h2>
-          </div>
-
-          {/* ====================================================== */}
-          {/* Embedded finance*/}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950">
-              <AiTwotonePieChart />
-            </div>
-            <h2 className="capitalize font-bold">Embedded finance</h2>
-          </div>
-
-          {/* ====================================================== */}
-          {/* Global businesses */}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950">
-              <TiGlobe />
-            </div>
-            <h2 className="capitalize font-bold">Global businesses</h2>
-          </div>
-
-          {/* ====================================================== */}
-          {/* Crypto*/}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950">
-              <SiBookstack />
-            </div>
-            <h2 className="capitalize font-bold">Crypto</h2>
-          </div>
-
-          {/* ====================================================== */}
-          {/* Creator economy */}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950">
-              <FaLightbulb />
-            </div>
-            <h2 className="capitalize font-bold">Creator economy</h2>
-          </div>
-
-          {/* ====================================================== */}
-          {/* AI companies */}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950">
-              <LiaAtomSolid />
-            </div>
-            <h2 className="capitalize font-bold">AI companies</h2>
           </div>
         </div>
 
         {/* ====================================================== */}
         {/* Global Payments */}
-        <div className="bg-white  p-[1rem] flex flex-col gap-[1.4rem]">
+        <div className="bg-white  p-[1rem] lg:p-[1.5rem] flex flex-col gap-[1.4rem]">
           {/* ====================================================== */}
           {/* Header */}
-          <p className="font-[600] uppercase text-[0.9rem]">ecosystem</p>
+          <p className="font-[600] uppercase text-[0.9rem] lg:text-[0.8rem]">
+            by use case
+          </p>
 
-          {/* ====================================================== */}
-          {/* Stripe app marketplaces */}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950">
-              <AiFillEdit />
+          <div className="flex flex-col gap-[1.4rem] lg:gap-[0.8rem] lg:grid lg:grid-cols-[repeat(2,_minmax(280px,_1fr))]">
+            {/* ====================================================== */}
+            {/* Finance automation */}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950">
+                <MdBarChart />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">
+                Finance automation
+              </h2>
             </div>
-            <h2 className="capitalize font-bold">Stripe app marketplaces</h2>
+
+            {/* ====================================================== */}
+            {/* Embedded finance*/}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950">
+                <AiTwotonePieChart />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">
+                Embedded finance
+              </h2>
+            </div>
+
+            {/* ====================================================== */}
+            {/* Global businesses */}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950">
+                <TiGlobe />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">
+                Global businesses
+              </h2>
+            </div>
+
+            {/* ====================================================== */}
+            {/* Crypto*/}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950">
+                <SiBookstack />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">Crypto</h2>
+            </div>
+
+            {/* ====================================================== */}
+            {/* Creator economy */}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950">
+                <FaLightbulb />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">
+                Creator economy
+              </h2>
+            </div>
+
+            {/* ====================================================== */}
+            {/* AI companies */}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950">
+                <LiaAtomSolid />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">
+                AI companies
+              </h2>
+            </div>
           </div>
+        </div>
 
+        {/* ====================================================== */}
+        {/* Global Payments */}
+        <div className="bg-white  p-[1rem] lg:p-[1.5rem] flex flex-col gap-[1.4rem]">
           {/* ====================================================== */}
-          {/* partners */}
-          <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
-            onClick={() => toast.error(`Sorry link isn't functional`)}
-          >
-            <div className="text-blue-400 group-hover:text-gray-950">
-              <FaBookOpen />
+          {/* Header */}
+          <p className="font-[600] uppercase text-[0.9rem] lg:text-[0.8rem]">
+            ecosystem
+          </p>
+
+          <div className="flex flex-col gap-[1.4rem] lg:gap-[0.8rem] lg:grid lg:grid-cols-[repeat(2,_minmax(280px,_1fr))]">
+            {/* ====================================================== */}
+            {/* Stripe app marketplaces */}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950">
+                <AiFillEdit />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">
+                Stripe app marketplaces
+              </h2>
             </div>
-            <h2 className="capitalize font-bold">partners</h2>
+
+            {/* ====================================================== */}
+            {/* partners */}
+            <div
+              className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+              onClick={() => toast.error(`Sorry link isn't functional`)}
+            >
+              <div className="text-blue-400 group-hover:text-gray-950">
+                <FaBookOpen />
+              </div>
+              <h2 className="capitalize font-bold lg:text-[0.85rem]">
+                partners
+              </h2>
+            </div>
           </div>
         </div>
       </div>

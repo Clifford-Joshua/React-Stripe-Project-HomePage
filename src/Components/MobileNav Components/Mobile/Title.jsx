@@ -33,7 +33,10 @@ const Title = () => {
 
         <div
           className="flex justify-center items-center text-[1.35rem] text-gray-400"
-          onClick={() => dispatch(CloseModal())}
+          onClick={() => {
+            dispatch(CloseModal());
+            dispatch(ChangeTitleHeader(false));
+          }}
         >
           <FaXmark />
         </div>

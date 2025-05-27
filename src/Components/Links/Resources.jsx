@@ -16,21 +16,21 @@ import { HiDatabase } from "react-icons/hi";
 import styled from "styled-components";
 const Resources = () => {
   return (
-    <Wrapper className="pb-[4rem]  bg-slate-50 ">
+    <Wrapper className="pb-[4rem] lg:pb-0  bg-slate-50 ">
       <div>
         {/* ====================================================== */}
         {/* first section */}
-        <div className="bg-white p-[1rem] py-[2.5rem] flex flex-col gap-[1.8rem]">
+        <div className="bg-white p-[1rem]  py-[2.5rem] lg:p-[2rem]  flex flex-col lg:grid lg:grid-cols-[repeat(2,_minmax(200px,_1fr))] gap-[1.8rem] lg:gap-[1.2rem]">
           {/* ====================================================== */}
           {/*  Support center*/}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className=" flex gap-[0.5rem] items-center group"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <IoAtCircleOutline />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
               Support center
             </h3>
           </div>
@@ -38,13 +38,13 @@ const Resources = () => {
           {/* ====================================================== */}
           {/*  Supports plans */}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className=" flex gap-[0.5rem] items-center group"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <AiFillSlackCircle />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
               Supports plans
             </h3>
           </div>
@@ -52,25 +52,27 @@ const Resources = () => {
           {/* ====================================================== */}
           {/* Guides */}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className=" flex gap-[0.5rem] items-center group"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <FaBookDead />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">Guides</h3>
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
+              Guides
+            </h3>
           </div>
 
           {/* ====================================================== */}
           {/* Customer stories */}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className=" flex gap-[0.5rem] items-center group"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <FiAlignJustify />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
               Customer stories
             </h3>
           </div>
@@ -78,37 +80,41 @@ const Resources = () => {
           {/* ====================================================== */}
           {/*Blog */}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className=" flex gap-[0.5rem] items-center group"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <HiDatabase />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">Blog</h3>
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
+              Blog
+            </h3>
           </div>
 
           {/* ====================================================== */}
           {/*Sessions */}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className=" flex gap-[0.5rem] items-center group"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <IoBagSharp />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">Sessions</h3>
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
+              Sessions
+            </h3>
           </div>
 
           {/* ====================================================== */}
           {/*Contact sales */}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className=" flex gap-[0.5rem] items-center group"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <IoChatbubbles />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
               Contact sales
             </h3>
           </div>
@@ -116,41 +122,45 @@ const Resources = () => {
 
         {/* ====================================================== */}
         {/* slate color section */}
-        <div className=" p-[1rem] py-[2.5rem] flex flex-col gap-[1.8rem]">
+        <div className=" p-[1rem] py-[2.5rem] lg:p-[2rem] flex flex-col gap-[1.8rem] lg:gap-[1.2rem] lg:grid lg:grid-cols-[repeat(2,_minmax(200px,_1fr))]">
           {/* ====================================================== */}
           {/* Job*/}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className=" flex gap-[0.5rem] items-center group"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <IoBagSharp />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">Jobs</h3>
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
+              Jobs
+            </h3>
           </div>
 
           {/* ====================================================== */}
           {/* Newsroom */}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className=" flex gap-[0.5rem] items-center group"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <BsNewspaper />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">Newsroom</h3>
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
+              Newsroom
+            </h3>
           </div>
 
           {/* ====================================================== */}
           {/* Stripe press */}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className=" flex gap-[0.5rem] items-center group"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <IoCopy />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
               Stripe Press
             </h3>
           </div>
@@ -158,13 +168,13 @@ const Resources = () => {
           {/* ====================================================== */}
           {/*Become a partner */}
           <div
-            className="text-[1.05rem] flex gap-[0.5rem] items-center group"
+            className=" flex gap-[0.5rem] items-center group"
             onClick={() => toast.error(`Sorry link isn't functional`)}
           >
             <div className="text-blue-400 group-hover:text-gray-950 text-[1.3rem]">
               <FaPlusSquare />
             </div>
-            <h3 className="font-bold text-[0.98rem] text-gray-800">
+            <h3 className="font-bold text-[0.98rem] lg:text-[0.85rem] text-gray-800">
               Become a partner
             </h3>
           </div>

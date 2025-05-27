@@ -1,10 +1,13 @@
 import React from "react";
 import Stripe from "../../../assets/Images/Stripe-Color.jpg";
-
+import { CloseDesktopModal } from "../../../Features/NavBars/NavSlice";
+import { useDispatch } from "react-redux";
 import styled from "styled-components";
 const Landing = () => {
+  const dispatch = useDispatch();
+
   return (
-    <Wrapper>
+    <Wrapper onMouseOver={() => dispatch(CloseDesktopModal())}>
       <div className=" relative h-[100vh]">
         <img
           src={Stripe}
