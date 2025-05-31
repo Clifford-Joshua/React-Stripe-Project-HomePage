@@ -5,6 +5,7 @@ import { LocalData } from "../../Local Data/NavData";
 const initialState = {
   title: "",
   location: {},
+  navWidth: 0,
   navHeight: 0,
   isLinkOpen: false,
   isModalOpen: false,
@@ -36,6 +37,9 @@ const NavSlice = createSlice({
     setNavHeight: (state, action) => {
       state.navHeight = action.payload;
     },
+    setNavWidth: (state, action) => {
+      state.navWidth = action.payload;
+    },
     OpenSubNavLink: (state, action) => {
       state.isNavLinksClicked = true;
       state.title = action.payload;
@@ -59,6 +63,7 @@ export const {
   OpenDesktopModal,
   CloseDesktopModal,
   setNavHeight,
+  setNavWidth,
 } = NavSlice.actions;
 
 export default NavSlice.reducer;

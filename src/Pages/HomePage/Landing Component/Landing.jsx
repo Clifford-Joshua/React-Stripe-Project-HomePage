@@ -1,27 +1,35 @@
 import React from "react";
 import IntroText from "./IntroText";
 import styled from "styled-components";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Stripe from "../../../assets/Images/Stripe-Color.jpg";
 import { CloseDesktopModal } from "../../../Features/NavBars/NavSlice";
 const Landing = () => {
   const dispatch = useDispatch();
+  const { navHeight } = useSelector((store) => store.NavBar);
 
   return (
     <Wrapper onMouseOver={() => dispatch(CloseDesktopModal())}>
-      <div className=" relative h-[100vh]">
-        <img
-          src={Stripe}
-          alt=""
-          className="absolute w-[100%] h-[100%] object-cover"
-        />
-        <div className="w-[100%] h-[100%] bg-white absolute clip_div"></div>
+      {/* ======================================================================== */}
+      {/* container div */}
+      <div
+        className="min-h-[100vh] md:min-h-[50vh] relative"
+        style={{ paddingTop: `${navHeight ? navHeight : 70}px` }}
+      >
+        {/* ====================================================================== */}
+        {/* Hero container */}
+        <div className="absolute top-0 w-[100%] h-[100%]">
+          <div className="w-[100%] h-[100%] bg-white absolute top-0 z-0 clip_div"></div>
+          <img
+            src={Stripe}
+            alt="Stripe image"
+            className="h-[100%] object-cover w-[100%]"
+          />
+        </div>
 
-        {/* ============================================================= */}
-        {/* Landing Page Text */}
-
+        {/* ======================================================================== */}
+        {/* Text session */}
         <IntroText />
-        {/* ============================================================= */}
       </div>
     </Wrapper>
   );
