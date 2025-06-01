@@ -4,8 +4,8 @@ import Title from "./Title";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
 import { GoDotFill } from "react-icons/go";
-import Arrow from "../../../Components/Button/Arrow";
-import Img from "../../../assets/Images/StripePayment.png";
+import Arrow from "../../../../Components/Button/Arrow";
+import Img from "../../../../assets/Images/StripePayment.png";
 
 const IntroText = () => {
   // Adjust the navHeight based on screen size

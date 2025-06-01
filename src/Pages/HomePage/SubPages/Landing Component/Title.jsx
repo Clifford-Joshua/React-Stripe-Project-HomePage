@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Arrow from "../../../Components/Button/Arrow";
+import Arrow from "../../../../Components/Button/Arrow";
 import styled from "styled-components";
 const Title = () => {
   return (
@@ -27,10 +27,18 @@ const Title = () => {
           {/* ======================================================== */}
           {/* Button/Links container */}
           <div className="flex items-center">
-            <Link className="flex items-center justify-center gap-[0.3rem] border rounded-[2rem] lg:text-[1.1rem]  px-[0.7rem] py-[0.3rem] text-white bg-slate-950 group hover:bg-slate-500">
-              <h4 className="font-extrabold">Start now</h4>
-              <Arrow />
-            </Link>
+            <div className="lg:bg-slate-200 focus-within:outline-blue-700 focus-within:outline-2 lg:flex lg:items-center lg:justify-center  lg:gap-[1.5rem] lg:rounded-[2rem] lg:p-[0.3rem] input">
+              <input
+                type="email"
+                className="hidden lg:block border-none outline-none pl-[1.5rem]  text-[0.95rem] text-gray-900 font-[550]"
+                placeholder="Email address"
+              />
+
+              <Link className="flex items-center justify-center gap-[0.3rem] border rounded-[2rem] lg:text-[1rem]  px-[0.7rem] py-[0.3rem] text-white bg-slate-950 group hover:bg-slate-500">
+                <h4 className="font-extrabold">Start now</h4>
+                <Arrow />
+              </Link>
+            </div>
 
             <Link className="flex items-center justify-center gap-[0.3rem]  rounded-[2rem] lg:hidden  px-[0.7rem] py-[0.3rem]   text-slate-900  hover:text-slate-500 group">
               <p className="font-[500]">Contact sales</p>

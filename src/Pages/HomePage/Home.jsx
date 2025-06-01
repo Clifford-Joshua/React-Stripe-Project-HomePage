@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { TechIcon } from "./SubPages/main";
 import { useSelector } from "react-redux";
-import { Landing } from "./Landing Component/main";
+import Landing from "./SubPages/Landing Component/Landing";
 import MobileModel from "../../Components/MobileNav Components/MobileModel";
 
 const Home = () => {
@@ -10,6 +11,8 @@ const Home = () => {
     <Wrapper>
       <div>
         <Landing />
+
+        <TechIcon />
 
         {isModalOpen && <MobileModel />}
       </div>

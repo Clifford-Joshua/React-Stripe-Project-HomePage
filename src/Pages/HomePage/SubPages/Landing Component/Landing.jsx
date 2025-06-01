@@ -2,8 +2,8 @@ import React from "react";
 import IntroText from "./IntroText";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
-import Stripe from "../../../assets/Images/Stripe-Color.jpg";
-import { CloseDesktopModal } from "../../../Features/NavBars/NavSlice";
+import Stripe from "../../../../assets/Images/Stripe-Color.jpg";
+import { CloseDesktopModal } from "../../../../Features/NavBars/NavSlice";
 const Landing = () => {
   const dispatch = useDispatch();
   const { navHeight } = useSelector((store) => store.NavBar);
