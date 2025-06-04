@@ -1,3 +1,4 @@
 import TechIcon from "./TechIcon";
+import CompanyServices from "./CompanyServices";
 
-export {TechIcon}
+export { TechIcon, CompanyServices };

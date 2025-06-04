@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Amazon from "../../../assets/Images/Amazon-Logo.png";
 import Bmw from "../../../assets/Images/bmw.png";
 import Google from "../../../assets/Images/google.png";
@@ -7,7 +8,6 @@ import Salesforce from "../../../assets/Images/salesforce.png";
 import Shopify from "../../../assets/Images/shopify.png";
 import urb from "../../../assets/Images/urbn.png";
 import whatsApp from "../../../assets/Images/WhatsApp-Emblem.png";
-import { useSelector } from "react-redux";
 
 import styled from "styled-components";
 const TechIcon = () => {
