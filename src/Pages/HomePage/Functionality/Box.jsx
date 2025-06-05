@@ -66,23 +66,23 @@ const Box = () => {
 
   return (
     <Wrapper>
-      <div className="grid grid-cols-[repeat(4,_auto)] justify-center items-center gap-[0.5rem]">
-        <div className="w-[80px] h-[80px]  rounded-[10px] "></div>
+      <div className="grid grid-cols-[repeat(4,_auto)]  justify-center items-center gap-[0.7rem] md:gap-[1.4rem] lg:gap-[1rem] ">
+        <div className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px]  rounded-[10px] "></div>
 
         <div
-          className="w-[80px] h-[80px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[1] "
+          className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[1] "
           onMouseEnter={(e) => toggleIconClass(e, true)}
           onMouseLeave={(e) => toggleIconClass(e, false)}
         >
           <div
-            className={`text-[3rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
+            className={`text-[3rem] lg:text-[2rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
               PurpleLine && "Icon"
             }`}
           >
             <AiFillAlipayCircle />
 
             <h2
-              className={`capitalize text-[0.75rem] font-extrabold text-white ${
+              className={`capitalize text-[0.75rem] lg:text-[0.6rem] font-extrabold text-white ${
                 PurpleLine ? "block" : "hidden"
               }`}
             >
@@ -91,24 +91,24 @@ const Box = () => {
           </div>
         </div>
 
-        <div className="w-[80px] h-[80px] rounded-[10px] "></div>
+        <div className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] "></div>
 
-        <div className="w-[80px] h-[80px] rounded-[10px] "></div>
+        <div className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] "></div>
 
         <div
-          className="w-[80px] h-[80px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[1] "
+          className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[1] "
           onMouseEnter={(e) => toggleIconClass(e, true)}
           onMouseLeave={(e) => toggleIconClass(e, false)}
         >
           <div
-            className={`text-[3rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
+            className={`text-[3rem] lg:text-[2rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
               GreenLine && "Icon"
             }`}
           >
             <AiFillAppstore />
 
             <h2
-              className={`capitalize text-[0.75rem] font-extrabold text-white ${
+              className={`capitalize text-[0.75rem] lg:text-[0.6rem] font-extrabold text-white ${
                 GreenLine ? "block" : "hidden"
               }`}
             >
@@ -120,7 +120,7 @@ const Box = () => {
         {/* ================================================= */}
         {/* straight line div */}
         <div
-          className="w-[80px] h-[80px] rounded-[10px] flex justify-center items-center relative"
+          className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] flex justify-center items-center relative"
           onMouseEnter={(e) => toggleIconClass(e, true)}
           onMouseLeave={(e) => toggleIconClass(e, false)}
         >
@@ -132,16 +132,16 @@ const Box = () => {
           ></div>
         </div>
 
-        <div className="w-[80px] h-[80px] rounded-[10px] border border-gray-600 bg-slate-50  relative z-[1] ">
+        <div className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] border border-gray-600 bg-slate-50  relative z-[1] ">
           <div
-            className={`text-[3rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
+            className={`text-[3rem] lg:text-[2rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
               GreenLine || RedLine ? "Icon" : ""
             }`}
           >
             <AiFillBilibili />
 
             <h2
-              className={`capitalize text-[0.75rem] font-extrabold text-white ${
+              className={`capitalize text-[0.75rem] lg:text-[0.6rem] font-extrabold text-white ${
                 GreenLine || RedLine ? "block" : "hidden"
               }`}
             >
@@ -151,39 +151,39 @@ const Box = () => {
         </div>
 
         <div
-          className="w-[80px] h-[80px] rounded-[10px] border border-gray-600 bg-slate-50 "
+          className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] border border-gray-600 bg-slate-50 "
           onMouseEnter={(e) => toggleIconClass(e, true)}
           onMouseLeave={(e) => toggleIconClass(e, false)}
         >
           <div
-            className={`text-[3rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out `}
+            className={`text-[3rem] lg:text-[2rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out `}
           >
             <AiFillIdcard />
 
             <h2
-              className={`capitalize text-[0.75rem] font-extrabold text-white hidden`}
+              className={`capitalize text-[0.75rem] lg:text-[0.6rem] font-extrabold text-white hidden`}
             >
               checkout
             </h2>
           </div>
         </div>
 
-        <div className="w-[80px] h-[80px] rounded-[10px] "></div>
+        <div className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] "></div>
 
         <div
-          className="w-[80px] h-[80px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[1]"
+          className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[1]"
           onMouseEnter={(e) => toggleIconClass(e, true)}
           onMouseLeave={(e) => toggleIconClass(e, false)}
         >
           <div
-            className={`text-[3rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
+            className={`text-[3rem] lg:text-[2rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
               PurpleLine || BlueLine ? "Icon" : ""
             }`}
           >
             <AiFillAndroid />
 
             <h2
-              className={`capitalize text-[0.75rem] font-extrabold text-white ${
+              className={`capitalize text-[0.75rem] lg:text-[0.6rem] font-extrabold text-white ${
                 BlueLine || PurpleLine ? "block" : "hidden"
               }`}
             >
@@ -194,7 +194,7 @@ const Box = () => {
 
         {/* ================================================= */}
         {/*first curve  line div */}
-        <div className="w-[80px] h-[80px] rounded-[10px] flex justify-center relative">
+        <div className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] flex justify-center relative">
           {/* red curve line div */}
           <div
             className={`half-red_curve absolute bottom-[-10%] left-[55%] flex items-end justify-end ${
@@ -213,19 +213,19 @@ const Box = () => {
         </div>
 
         <div
-          className="w-[80px] h-[80px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[1]"
+          className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[1]"
           onMouseEnter={(e) => toggleIconClass(e, true)}
           onMouseLeave={(e) => toggleIconClass(e, false)}
         >
           <div
-            className={`text-[3rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
+            className={`text-[3rem] lg:text-[2rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
               RedLine && "Icon"
             }`}
           >
             <AiFillInstagram />
 
             <h2
-              className={`capitalize text-[0.75rem] font-extrabold text-white ${
+              className={`capitalize text-[0.75rem] lg:text-[0.6rem] font-extrabold text-white ${
                 RedLine ? "block" : "hidden"
               }`}
             >
@@ -235,19 +235,19 @@ const Box = () => {
         </div>
 
         <div
-          className="w-[80px] h-[80px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[2]"
+          className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[2]"
           onMouseEnter={(e) => toggleIconClass(e, true)}
           onMouseLeave={(e) => toggleIconClass(e, false)}
         >
           <div
-            className={`text-[3rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
+            className={`text-[3rem] lg:text-[2rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
               BlueLine || AquaLine ? "Icon" : ""
             }`}
           >
             <AiFillOpenAI />
 
             <h2
-              className={`capitalize text-[0.75rem] font-extrabold text-white ${
+              className={`capitalize text-[0.75rem] lg:text-[0.6rem] font-extrabold text-white ${
                 BlueLine || AquaLine ? "block" : "hidden"
               }`}
             >
@@ -258,7 +258,7 @@ const Box = () => {
 
         {/* ================================================= */}
         {/*second curve line div */}
-        <div className="w-[80px] h-[80px] rounded-[10px] flex justify-center relative">
+        <div className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] flex justify-center relative">
           {/* purple curve line div */}
           <div
             className={`half-purple_curve absolute top-[-10%] left-[50%] flex justify-end  ${
@@ -286,19 +286,19 @@ const Box = () => {
         </div>
 
         <div
-          className="w-[80px] h-[80px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[1]"
+          className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[1]"
           onMouseEnter={(e) => toggleIconClass(e, true)}
           onMouseLeave={(e) => toggleIconClass(e, false)}
         >
           <div
-            className={`text-[3rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
+            className={`text-[3rem] lg:text-[2rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
               PurpleLine || RedLine ? "Icon" : ""
             }`}
           >
             <AiFillSetting />
 
             <h2
-              className={`capitalize text-[0.75rem] font-extrabold text-white ${
+              className={`capitalize text-[0.75rem] lg:text-[0.6rem] font-extrabold text-white ${
                 PurpleLine || RedLine ? "block" : "hidden"
               }`}
             >
@@ -307,11 +307,11 @@ const Box = () => {
           </div>
         </div>
 
-        <div className="w-[80px] h-[80px] rounded-[10px] "></div>
+        <div className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] "></div>
 
         {/* ================================================= */}
         {/*last curve line div */}
-        <div className="w-[80px] h-[80px] rounded-[10px] flex justify-center relative z-[1]">
+        <div className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] flex justify-center relative z-[1]">
           {/* aqua curve line div */}
           <div
             className={`half-aqua_curve absolute top-[-10%] left-[50%] flex justify-end ${
@@ -323,19 +323,19 @@ const Box = () => {
         </div>
 
         <div
-          className="w-[80px] h-[80px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[1]"
+          className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] border border-gray-600 bg-slate-50 relative z-[1]"
           onMouseEnter={(e) => toggleIconClass(e, true)}
           onMouseLeave={(e) => toggleIconClass(e, false)}
         >
           <div
-            className={`text-[3rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
+            className={`text-[3rem] lg:text-[2rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out ${
               BlueLine || AquaLine ? "Icon" : ""
             }`}
           >
             <AiFillWechat />
 
             <h2
-              className={`capitalize text-[0.75rem] font-extrabold text-white ${
+              className={`capitalize text-[0.75rem] lg:text-[0.6rem] font-extrabold text-white ${
                 BlueLine || AquaLine ? "block" : "hidden"
               }`}
             >
@@ -345,24 +345,24 @@ const Box = () => {
         </div>
 
         <div
-          className="w-[80px] h-[80px] rounded-[10px] border border-gray-600 bg-slate-50"
+          className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px] border border-gray-600 bg-slate-50"
           onMouseEnter={(e) => toggleIconClass(e, true)}
           onMouseLeave={(e) => toggleIconClass(e, false)}
         >
           <div
-            className={`text-[3rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out`}
+            className={`text-[3rem] lg:text-[2rem] w-[100%] h-[100%] flex flex-col items-center justify-center text-gray-400 rounded-[10px] transition duration-500 ease-in-out`}
           >
             <AiFillSlackSquare />
 
             <h2
-              className={`capitalize text-[0.75rem] font-extrabold text-white hidden`}
+              className={`capitalize text-[0.75rem] lg:text-[0.6rem] font-extrabold text-white hidden`}
             >
               capital
             </h2>
           </div>
         </div>
 
-        <div className="w-[80px] h-[80px] rounded-[10px]"></div>
+        <div className="w-[80px] h-[80px] lg:w-[60px] lg:h-[60px] rounded-[10px]"></div>
       </div>
     </Wrapper>
   );
@@ -513,6 +513,22 @@ const Wrapper = styled.div`
   /* ====================================================== */
   /* Ipad View */
   /* ====================================================== */
+  @media screen and (width>= 764px) {
+    .height_100 {
+      height: 150px;
+    }
+  }
+
+  /* ====================================================== */
+
+  /* ====================================================== */
+  /* Desktop View */
+  /* ====================================================== */
+  @media screen and (width>= 764px) {
+    .height_100 {
+      height: 100px;
+    }
+  }
 
   /* ====================================================== */
 `;
