@@ -1,3 +1,4 @@
 import Box from "./Box";
+import Phone from "./Phone";
 
-export { Box };
+export { Box, Phone };
