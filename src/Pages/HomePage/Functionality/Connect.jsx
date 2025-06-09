@@ -15,7 +15,6 @@ const Connect = () => {
     }, 2000);
 
     return () => clearInterval(interval); // Correct cleanup
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Empty dependency array: run once on mount
 
   useEffect(() => {
