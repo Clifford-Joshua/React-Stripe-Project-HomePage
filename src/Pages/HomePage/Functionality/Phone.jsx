@@ -1,17 +1,21 @@
 import moment from "moment";
+import Loader from "../../../Components/Animation/Loader";
 import React, { useEffect, useRef, useState } from "react";
 import { slideData } from "../../../Local Data/NavData";
 import Chair from "../../../assets/Images/Chair.jpg";
 import { FaApple, FaGreaterThan } from "react-icons/fa";
 
 import styled from "styled-components";
+import { useSelector } from "react-redux";
+
 const Phone = () => {
   const slideContainer = useRef(null);
   const refContainer = useRef(null);
   const [data] = useState(slideData);
   const [index, setIndex] = useState(0);
   const [height, setHeight] = useState(0);
-  const [animation, setAnimation] = useState(false);
+
+  const { isAnimation } = useSelector((store) => store.NavBar);
 
   const [animate, setAnimate] = useState({ width: 0, height: 0 });
 
@@ -54,17 +58,6 @@ const Phone = () => {
     return () => window.removeEventListener("resize", updateSize);
   }, []);
 
-  useEffect(() => {
-    const Interval = setInterval(() => {
-      setAnimation(true);
-      setTimeout(() => {
-        setAnimation(false);
-      }, 4000);
-    }, 10000);
-
-    return () => clearInterval(Interval);
-  }, []);
-
   const getSlidePosition = (ind, index, length, active, last, next) => {
     if (ind === index) return active;
     if (ind === index - 1 || (index === 0 && ind === length - 1)) return last;
@@ -74,41 +67,8 @@ const Phone = () => {
   return (
     <Wrapper className="">
       <div className="bg-slate-100  rounded-[20px] p-[0.5rem]  shadow w-[300px]">
-        {animation ? (
-          <div
-            ref={refContainer}
-            style={{
-              width: `${animate.width}px`,
-              height: `${animate.height + height}px`,
-            }}
-            className="rounded-[20px] overflow-hidden relative bg-white"
-          >
-            <div className="h-full w-full animate-pulse p-4 flex flex-col justify-between gap-4">
-              {/* Header row */}
-              <div className="flex items-center space-x-4">
-                <div className="w-10 h-10 rounded-full bg-gray-300" />
-                <div className="flex-1 space-y-2">
-                  <div className="h-3 w-3/4 bg-gray-300 rounded" />
-                  <div className="h-3 w-1/2 bg-gray-300 rounded" />
-                </div>
-              </div>
-
-              {/* Multiple shimmer blocks to mimic transaction cards */}
-              <div className="flex flex-col  gap-[1rem]">
-                {[...Array(4)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="rounded-[10px]  p-4 space-y-2 bg-gray-100"
-                  >
-                    <div className="h-3 w-2/3 bg-gray-300 rounded" />
-                    <div className="h-3 w-full bg-gray-300 rounded" />
-                    <div className="h-3 w-1/2 bg-gray-300 rounded" />
-                    <div className="h-3 w-1/2 bg-gray-300 rounded" />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+        {isAnimation ? (
+          <Loader animate={animate} />
         ) : (
           <div
             className="bg-white p-[1rem] py-[2rem] rounded-[20px]  flex flex-col items-center justify-center gap-[1rem]"

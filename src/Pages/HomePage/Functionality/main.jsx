@@ -1,4 +1,4 @@
 import Box from "./Box";
 import Phone from "./Phone";
-
-export { Box, Phone };
+import Bill from "./Bill";
+export { Box, Phone, Bill };

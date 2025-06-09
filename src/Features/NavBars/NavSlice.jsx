@@ -9,6 +9,7 @@ const initialState = {
   navHeight: 0,
   isLinkOpen: false,
   isModalOpen: false,
+  isAnimation: false,
   isNavLinksClicked: false,
   isDesktopModalOpen: false,
 };
@@ -50,6 +51,12 @@ const NavSlice = createSlice({
     setLocation: (state, action) => {
       state.location = action.payload;
     },
+    setAnimationTrue: (state) => {
+      state.isAnimation = true;
+    },
+    setAnimationFalse: (state) => {
+      state.isAnimation = false;
+    },
   },
 });
 
@@ -64,6 +71,8 @@ export const {
   CloseDesktopModal,
   setNavHeight,
   setNavWidth,
+  setAnimationFalse,
+  setAnimationTrue,
 } = NavSlice.actions;
 
 export default NavSlice.reducer;
