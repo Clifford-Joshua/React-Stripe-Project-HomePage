@@ -1,6 +1,5 @@
 import { FaRegCheckCircle } from "react-icons/fa";
 import { BillData } from "../../../Local Data/NavData";
-import Loader from "../../../Components/Animation/Loader";
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 const Bill = () => {
