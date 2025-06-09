@@ -2,7 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 import { useSelector } from "react-redux";
-import { Box, Phone, Bill } from "../Functionality/main";
+import { Box, Phone, Bill, ConNect } from "../Functionality/main";
 import Arrow from "../../../Components/Button/Arrow";
 
 import payment from "../../../assets/Images/Payment.png";
@@ -29,7 +29,7 @@ const CompanyServices = () => {
       >
         {/* =============================================================== */}
         {/* Modular solution */}
-        <div className="flex flex-col lg:flex-row lg:gap-[5rem] gap-[3rem] items-center">
+        <div className="flex flex-col lg:flex-row lg:gap-[5rem] gap-[3rem] items-center  w-[100%]">
           <div className="flex flex-col gap-[1.2rem] lg:w-[50%]">
             <h3 className="font-extrabold text-[1.1rem] md:text-[1.3rem] text-blue-600">
               Modular solutions
@@ -51,7 +51,7 @@ const CompanyServices = () => {
 
         {/* =============================================================== */}
         {/*payment */}
-        <div className="flex flex-col lg:flex-row lg:gap-[5rem] gap-[3rem] items-center">
+        <div className="flex flex-col lg:flex-row lg:gap-[5rem] gap-[3rem] items-center  w-[100%]">
           <div className="flex flex-col gap-[1.2rem] lg:w-[50%]">
             <h3 className="font-extrabold text-[1.1rem] md:text-[1.3rem]  flex items-center ">
               <img
@@ -111,7 +111,7 @@ const CompanyServices = () => {
 
         {/* =============================================================== */}
         {/*billing */}
-        <div className="flex flex-col lg:flex-row lg:gap-[5rem] gap-[3rem] items-center">
+        <div className="flex flex-col lg:flex-row lg:gap-[5rem] gap-[3rem] items-center  w-[100%]">
           <div className="flex flex-col gap-[1.2rem] lg:w-[50%]">
             <h3 className="font-extrabold text-[1.1rem] md:text-[1.3rem]  flex items-center ">
               <img
@@ -171,7 +171,7 @@ const CompanyServices = () => {
 
         {/* =============================================================== */}
         {/*Connect */}
-        <div className="flex flex-col lg:flex-row lg:gap-[5rem] gap-[3rem] items-center">
+        <div className="flex flex-col lg:flex-row lg:gap-[5rem] gap-[3rem] items-center w-[100%]">
           <div className="flex flex-col gap-[1.2rem] lg:w-[50%]">
             <h3 className="font-extrabold text-[1.1rem] md:text-[1.3rem]  flex items-center ">
               <img
@@ -226,12 +226,12 @@ const CompanyServices = () => {
               </p>
             </div>
           </div>
-          <Box />
+          <ConNect />
         </div>
 
         {/* =============================================================== */}
         {/*Issuing */}
-        <div className="flex flex-col lg:flex-row lg:gap-[5rem] gap-[3rem] items-center">
+        <div className="flex flex-col lg:flex-row lg:gap-[5rem] gap-[3rem] items-center  w-[100%]">
           <div className="flex flex-col gap-[1.2rem] lg:w-[50%]">
             <h3 className="font-extrabold text-[1.1rem] md:text-[1.3rem]  flex items-center ">
               <img

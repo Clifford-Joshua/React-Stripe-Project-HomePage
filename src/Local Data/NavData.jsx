@@ -97,3 +97,27 @@ export const BillData = [
     ],
   },
 ];
+
+export const connectData = [
+  {
+    total: "$120.00",
+    status: "pending",
+    color: "gray",
+    price: "$194.000",
+    company: "Brilo Tech",
+  },
+  {
+    total: "$80.00",
+    status: "completed",
+    color: "#30df05",
+    price: "$104.000",
+    company: "Nuvex Systems",
+  },
+  {
+    total: "$200.00",
+    status: "failed",
+    color: "red",
+    price: "$94.000",
+    company: "Zylo Studio",
+  },
+];

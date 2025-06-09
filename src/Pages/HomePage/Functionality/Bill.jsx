@@ -144,9 +144,12 @@ const Bill = () => {
                             This includes:
                           </p>
 
-                          {content[ind].map((items) => {
+                          {content[ind].map((items, ind) => {
                             return (
-                              <div className="flex gap-[0.2rem] md:gap-[0.4rem] text-[0.4rem] md:text-[0.5rem]">
+                              <div
+                                className="flex gap-[0.2rem] md:gap-[0.4rem] text-[0.4rem] md:text-[0.5rem]"
+                                key={ind}
+                              >
                                 <FaRegCheckCircle className="text-green-500" />
                                 <p>{items}</p>
                               </div>
