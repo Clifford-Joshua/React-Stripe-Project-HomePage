@@ -9,7 +9,7 @@ import image8 from "../assets/Images/P8.jpg";
 import image9 from "../assets/Images/P9.jpg";
 import abs from "../assets/Images/Abstraction.jpg";
 import quantum from "../assets/Images/quantum.jpg";
-import typo from "../assets/Images/typography.jpg";
+import typo from "../assets/Images/Typography.jpg";
 
 export const LocalData = ["Products", "Solutions", "Developers", "Resources"];
 
