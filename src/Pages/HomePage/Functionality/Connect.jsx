@@ -100,6 +100,7 @@ const Connect = () => {
               return (
                 <button
                   className={`px-[0.8rem] p-[0.1rem] text-[0.7rem] font-bold text-black  shadow-xl/30 bg-white absolute ${position} rounded-[10px]`}
+                  key={ind}
                 >
                   {price}
                 </button>

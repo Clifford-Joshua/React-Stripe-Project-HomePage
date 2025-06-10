@@ -11,6 +11,10 @@ import abs from "../assets/Images/Abstraction.jpg";
 import quantum from "../assets/Images/quantum.jpg";
 import typo from "../assets/Images/Typography.jpg";
 
+import Bank from "../assets/Images/Bank.jpg";
+import Bank2 from "../assets/Images/Bank2.jpg";
+import Bank3 from "../assets/Images/Bank3.jpg";
+
 export const LocalData = ["Products", "Solutions", "Developers", "Resources"];
 
 export const slideData = [
@@ -119,5 +123,41 @@ export const connectData = [
     color: "red",
     price: "$94.000",
     company: "Zylo Studio",
+  },
+];
+
+export const ATMCARD = [
+  {
+    serial_number: 7564,
+    bank: "Zenith ",
+    logo: Bank,
+    color: "red",
+    card_type: "Visa Debit",
+    owner: "John Doe",
+    number: "5399 1234 5678 9010",
+    month_year: "07/25",
+    expiry_date: "July 2025",
+  },
+  {
+    serial_number: 7565,
+    bank: "Access",
+    logo: Bank,
+    color: "blue",
+    card_type: "Verve Card",
+    owner: "Jane Smith",
+    number: "5061 3456 7890 2345",
+    month_year: "03/26",
+    expiry_date: "March 2026",
+  },
+  {
+    serial_number: 7566,
+    bank: "GTB",
+    color: "black",
+    logo: Bank,
+    card_type: "Mastercard Debit",
+    owner: "Michael Johnson",
+    number: "5222 4567 8910 1234",
+    month_year: "12/24",
+    expiry_date: "December 2024",
   },
 ];
