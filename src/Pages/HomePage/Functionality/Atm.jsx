@@ -164,7 +164,7 @@ const Wrapper = styled.div`
 
   @keyframes height {
     from {
-      height: 300px;
+      height: 250px;
     }
     to {
       height: 0px;
