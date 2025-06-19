@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import { TechIcon, CompanyServices } from "./SubPages/main";
+import { TechIcon, CompanyServices, Global } from "./SubPages/main";
 import { useDispatch, useSelector } from "react-redux";
 import Landing from "./SubPages/Landing Component/Landing";
 import MobileModel from "../../Components/MobileNav Components/MobileModel";
@@ -33,6 +33,8 @@ const Home = () => {
         <TechIcon />
 
         <CompanyServices />
+
+        <Global />
 
         {isModalOpen && <MobileModel />}
       </div>
