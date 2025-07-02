@@ -1,7 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import { LocalData } from "../../Local Data/NavData";
-
 const initialState = {
   title: "",
   location: {},

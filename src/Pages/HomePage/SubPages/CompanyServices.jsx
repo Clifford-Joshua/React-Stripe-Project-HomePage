@@ -2,7 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 import { useSelector } from "react-redux";
-import { Box, Phone, Bill, ConNect, ATM } from "../Functionality/main";
+import { Box, Phone, Bill, ConNect, ATM } from "../utils/main";
 import Arrow from "../../../Components/Button/Arrow";
 
 import payment from "../../../assets/Images/Payment.png";

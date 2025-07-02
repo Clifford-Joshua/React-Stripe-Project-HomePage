@@ -12,8 +12,28 @@ import quantum from "../assets/Images/quantum.jpg";
 import typo from "../assets/Images/Typography.jpg";
 
 import Bank from "../assets/Images/Bank.jpg";
-import Bank2 from "../assets/Images/Bank2.jpg";
-import Bank3 from "../assets/Images/Bank3.jpg";
+
+// =======================================================
+// Slide
+import Connect from "../assets/Images/Connect.png";
+import Payment from "../assets/Images/Payment.png";
+import Bwn from "../assets/Images/bmw-landscape.png";
+import Amazon from "../assets/Images/home-enterprise-amazon-portrait.png";
+import Girltype from "../assets/Images/home-enterprise-maersk-portrait.png";
+import Construct from "../assets/Images/home-enterprise-twilio.png";
+import AmazonWhite from "../assets/Images/amazon-white.png";
+import BwnWhite from "../assets/Images/BMW-white.png";
+import MaerskWhite from "../assets/Images/maersk-white.png";
+import TwilioWhite from "../assets/Images/twilio-white.png";
+
+import AmazonLogo from "../assets/Images/Amazon-Logo.png";
+import AmazonGray from "../assets/Images/amazon-gray.png";
+import BmwLogo from "../assets/Images/bmw.png";
+import BmwGray from "../assets/Images/Bmw-gray.png";
+import MaerskLogo from "../assets/Images/maersk-logo.png";
+import MaerskGray from "../assets/Images/maersk-gray.png";
+import TwilioLogo from "../assets/Images/twilio-logo.png";
+import TwiliGray from "../assets/Images/twilio-gray.png";
 
 export const LocalData = ["Products", "Solutions", "Developers", "Resources"];
 
@@ -159,5 +179,141 @@ export const ATMCARD = [
     number: "5222 4567 8910 1234",
     month_year: "12/24",
     expiry_date: "December 2024",
+  },
+];
+
+export const SupportData = [
+  {
+    title: "AI",
+    text: "Artificial Intelligence (AI) enables machines to mimic human thinking, learning, and problem-solving. It's used in automation, predictions, smart assistants, and decision-making across industries.",
+    social: ["OpenAI", "CURSOR", "ANTHROPIC"],
+  },
+  {
+    title: "Saas",
+    text: "Software as a Service (SaaS) delivers applications via the internet. Users subscribe and access services remotely, enabling scalability, regular updates, and easier collaboration.",
+    social: ["slack", "twillo", "Linear"],
+  },
+  {
+    title: "Marketplace",
+    text: "A marketplace is a digital platform where buyers and sellers connect to exchange goods or services. It offers variety, convenience, and competitive pricing.",
+    social: ["BLOOMNATION", "instacart", "deliverco"],
+  },
+  {
+    title: "Banking-as-a-service",
+    text: "BaaS allows non-banks to offer financial services using bank APIs. It enables embedded payments, accounts, and lending within apps or platforms.",
+    social: ["Karat", "shopify", "PERSONA"],
+  },
+  {
+    title: "Ecommerce",
+    text: "Ecommerce is online buying and selling of products or services. It allows 24/7 shopping, global access, and supports business growth through digital platforms.",
+    social: ["Glassler", "dermalogical", "INDOCHINO"],
+  },
+  {
+    title: "Crypto",
+    text: "Crypto is digital money secured by cryptography and powered by blockchain. It supports peer-to-peer transactions, decentralization, and financial innovations like DeFi and NFTs.",
+    social: ["Blockchain.com", "Braintrust", "Magic"],
+  },
+  {
+    title: "Creator economy",
+    text: "The creator economy empowers individuals to earn by sharing content, skills, or influence online through ads, subscriptions, sponsorships, and digital products on various platforms.",
+    social: ["X", "spotify", "substack"],
+  },
+];
+
+export const EnterprisesData = [
+  {
+    id: 1,
+    head_text: "Millions",
+    head_para: "BMW owners using ConnectedDrive Store",
+    body_text: "350+",
+    body_para: "US dealerships",
+    footer_text: "Products used",
+    icon1: Payment,
+    icon2: Connect,
+    icon1_text: "Payments",
+    icon2_text: "Connect",
+    background: Bwn,
+    nav_img: BwnWhite,
+    closing_text: "Learn why BMW chose Stripe to power ecommerce and payments",
+    linear: `to bottom,
+                rgba(0, 0, 255, 0.245),
+                rgba(0, 0, 255, 0.468),
+                rgba(0, 0, 255, 0.626),
+                rgba(0, 0, 255, 0.83)`,
+    color: "blue",
+    img: BmwLogo,
+    grayImg: BmwGray,
+  },
+  {
+    id: 2,
+    head_text: "5+",
+    head_para:
+      "Amazon businesses on Stripe including Prime, Audible, and Amazon Pay.",
+    body_text: "50+",
+    body_para: "Payment methods available on Stripe",
+    footer_text: "Products used",
+    icon1: Payment,
+    icon2: Connect,
+    icon1_text: "Payments",
+    icon2_text: "Connect",
+    background: Amazon,
+    nav_img: AmazonWhite,
+    closing_text: "See how Amazon simplified cross-border payments with Stripe",
+    linear: `to bottom,
+     rgba(255, 166, 0, 0.245),
+     rgba(255, 166, 0, 0.468),
+     rgba(255, 166, 0, 0.626),
+     rgba(255, 166, 0, 0.83)`,
+    color: "orange",
+    img: AmazonLogo,
+    grayImg: AmazonGray,
+  },
+  {
+    id: 3,
+    head_text: "130",
+    head_para: "Countries in logistics network",
+    body_text: "$10+",
+    body_para: "Billion worth of goods moved around the world each year",
+    footer_text: "Products used",
+    icon1: Payment,
+    icon2: Connect,
+    icon1_text: "Payments",
+    icon2_text: "Connect",
+    background: Girltype,
+    nav_img: MaerskWhite,
+    closing_text:
+      "See how Maersk tapped into new technology to make it easier to ship around the world",
+    linear: `to bottom,
+      rgba(0, 0, 255, 0.245),
+      rgba(0, 0, 255, 0.468),
+      rgba(0, 0, 255, 0.626),
+      rgba(0, 0, 255, 0.83)`,
+    color: "skyblue",
+    img: MaerskLogo,
+    grayImg: MaerskGray,
+  },
+  {
+    id: 4,
+    head_text: "+5.5%",
+    head_para: "Uplift from Stripe's Global Payments Infrastructure",
+    body_text: "+1%",
+    body_para: "Uplift from Adaptive Acceptance",
+    footer_text: "Products used",
+    icon1: Payment,
+    icon2: Connect,
+    icon1_text: "Payments",
+    icon2_text: "Connect",
+    background: Construct,
+    nav_img: TwilioWhite,
+    closing_text:
+      "See how Twilio increased authorization rates by 10% with Stripe",
+    linear: `  to bottom,
+      rgba(220, 20, 60, 0.245),
+      rgba(220, 20, 60, 0.468),
+      rgba(220, 20, 60, 0.626),
+      rgba(220, 20, 60, 0.83) `,
+    color: "red",
+    img: TwilioLogo,
+    grayImg: TwiliGray,
   },
 ];

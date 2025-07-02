@@ -4,6 +4,8 @@ import { FaCheckCircle } from "react-icons/fa";
 import Dot from "../../../assets/Images/dot.jpg";
 import { TbTriangleInvertedFilled } from "react-icons/tb";
 import { connectData } from "../../../Local Data/NavData";
+import getSlidePosition from "./getSlidePosition";
+
 const Connect = () => {
   const [data] = useState(connectData);
   const [index, setIndex] = useState(0);
@@ -30,12 +32,6 @@ const Connect = () => {
 
     return () => clearInterval(SlideInterval);
   }, [data]);
-
-  const getSlidePosition = (ind, index, length, active, last, next) => {
-    if (ind === index) return active;
-    if (ind === index - 1 || (index === 0 && ind === length - 1)) return last;
-    return next;
-  };
 
   return (
     <Wrapper className="w-[100%] lg:w-[50%] flex justify-center">

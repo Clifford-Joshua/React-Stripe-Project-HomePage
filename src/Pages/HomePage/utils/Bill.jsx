@@ -1,6 +1,8 @@
 import { FaRegCheckCircle } from "react-icons/fa";
 import { BillData } from "../../../Local Data/NavData";
 import React, { useEffect, useRef, useState } from "react";
+import getSlidePosition from "./getSlidePosition";
+
 import styled from "styled-components";
 const Bill = () => {
   const [data] = useState(BillData);
@@ -38,12 +40,6 @@ const Bill = () => {
     // Clean up
     return () => window.removeEventListener("resize", updateSize);
   }, []);
-
-  const getSlidePosition = (ind, index, length, active, last, next) => {
-    if (ind === index) return active;
-    if (ind === index - 1 || (index === 0 && ind === length - 1)) return last;
-    return next;
-  };
 
   return (
     <Wrapper className="w-[100%]  lg:w-[50%]">

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { ATMCARD } from "../../../Local Data/NavData";
 import atmChip from "../../../assets/Images/ATM.png";
+import getSlidePosition from "./getSlidePosition";
 const Atm = () => {
   const [data] = useState(ATMCARD);
   const [index, setIndex] = useState(0);
@@ -19,12 +20,6 @@ const Atm = () => {
 
     return () => clearInterval(SlideInterval);
   }, [data]);
-
-  const getSlidePosition = (ind, index, length, active, last, next) => {
-    if (ind === index) return active;
-    if (ind === index - 1 || (index === 0 && ind === length - 1)) return last;
-    return next;
-  };
 
   return (
     <Wrapper className="w-[100%] md:w-[50%] lg:w-[40%] h-[500px] ">

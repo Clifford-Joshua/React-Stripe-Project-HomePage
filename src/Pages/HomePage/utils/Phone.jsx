@@ -5,6 +5,8 @@ import { slideData } from "../../../Local Data/NavData";
 import Chair from "../../../assets/Images/Chair.jpg";
 import { FaApple, FaGreaterThan } from "react-icons/fa";
 
+import getSlidePosition from "./getSlidePosition";
+
 import styled from "styled-components";
 import { useSelector } from "react-redux";
 
@@ -57,12 +59,6 @@ const Phone = () => {
     // Clean up
     return () => window.removeEventListener("resize", updateSize);
   }, []);
-
-  const getSlidePosition = (ind, index, length, active, last, next) => {
-    if (ind === index) return active;
-    if (ind === index - 1 || (index === 0 && ind === length - 1)) return last;
-    return next;
-  };
 
   return (
     <Wrapper className="">
