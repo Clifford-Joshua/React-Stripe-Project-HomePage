@@ -17,7 +17,10 @@ const CardDesign = ({ title, text, btn, color, icon, AtlasHome }) => {
       <div className="h-[450px] rounded-[10px] shadow-2xl shadow-gray-800 p-[0.4rem] bg-white group/bgcolor cursor-pointer">
         <div
           className="h-[55%] rounded-[10px] flex items-end justify-end overflow-hidden transition-all duration-500 ease-in-out  group-hover/bgcolor:h-[43%]"
-          style={{ background: isHovered ? color : "#f1f5f9" }}
+          style={{
+            background: isHovered ? color : "#f1f5f9",
+            height: isHovered ? "43%" : "55%",
+          }}
         >
           <img
             src={AtlasHome}
