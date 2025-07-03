@@ -11,6 +11,7 @@ const Slide = () => {
   const [index, setIndex] = useState(0);
   const slideHeight = useRef(null);
   const [height, setHeight] = useState(0);
+  const [isClick, setIsClick] = useState(true);
 
   useEffect(() => {
     const updateHeight = () => {
@@ -147,6 +148,7 @@ const Slide = () => {
           <div
             className="flex items-center w-[100%]   relative overflow-hidden shadow-2xl"
             style={{ height }}
+            onClick={() => setIsClick(!isClick)}
           >
             {data.map(({ nav_img, closing_text, background, linear }, ind) => {
               const position = getSlidePosition(
@@ -182,7 +184,9 @@ const Slide = () => {
                       {closing_text}
                     </h2>
                     <button
-                      className="flex items-center gap-[0.4rem] text-[0.9rem] md:text-[1rem] font-extrabold w-max capitalize cursor-pointer h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:h-[35px] group-hover:opacity-100"
+                      className={`flex items-center gap-[0.4rem] text-[0.9rem] md:text-[1rem] font-extrabold w-max capitalize cursor-pointer lg:h-0 overflow-hidden opacity-0 transition-all duration-500 ${
+                        isClick ? "h-[35px]" : "h-0"
+                      } group-hover:lg:h-[35px] group-hover:opacity-100`}
                       onClick={() => toast.error("Sorry link is not clickable")}
                     >
                       read more

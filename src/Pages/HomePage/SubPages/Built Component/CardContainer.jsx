@@ -34,7 +34,7 @@ const CardContainer = () => {
               text: "Launch a business with a prebuilt payment page that’s optimized for conversion.",
               btn: "Start with Checkout",
               color:
-                "linear-gradient(to right,#f6f9fc,rgba(0, 0, 255, 0.338),rgba(0, 0, 255, 0.77)))",
+                "linear-gradient(to right,#f6f9fc,rgba(0, 0, 255, 0.338),rgba(0, 0, 255, 0.77))",
             }}
           />
         </div>
