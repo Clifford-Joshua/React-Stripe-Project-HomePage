@@ -1,15 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Arrow from "../../../../Components/Button/Arrow";
 import styled from "styled-components";
 import { toast } from "react-toastify";
 import { IoCard } from "react-icons/io5";
-import image from "../../../../assets/Images/Bmw-gray.png";
 import { EnterprisesData } from "../../../../Local Data/NavData";
 import getSlidePosition from "../../utils/getSlidePosition";
 
 const Slide = () => {
   const [data] = useState(EnterprisesData);
   const [index, setIndex] = useState(0);
+  const slideHeight = useRef(null);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    const updateHeight = () => {
+      if (slideHeight.current) {
+        const height = slideHeight.current.getBoundingClientRect().height;
+        setHeight(`${height + 20}px`);
+      }
+    };
+
+    window.addEventListener("resize", updateHeight);
+
+    // Initial call
+    updateHeight();
+
+    // Cleanup
+    return () => window.removeEventListener("resize", updateHeight);
+  }, []);
 
   useEffect(() => {
     const SlideInterval = setInterval(() => {
@@ -33,11 +51,14 @@ const Slide = () => {
   return (
     <Wrapper>
       <div className="py-[2rem] flex flex-col items-center gap-[2rem]">
-        <div className="flex flex-col w-[100%] gap-[2rem] lg:flex-row">
+        <div className="flex flex-col w-[100%] gap-[2rem] md:flex-row">
           {/* ===================================================================== */}
           {/* Slide header */}
 
-          <div className="flex items-center w-[100%] lg:w-[30%] h-[30vh] md:h-[45vh] overflow-hidden relative">
+          <div
+            className="flex items-center w-[100%] md:w-[30%] overflow-hidden relative"
+            style={{ height }}
+          >
             {data.map(
               (
                 {
@@ -65,6 +86,7 @@ const Slide = () => {
                   <div
                     className={`w-[100%] flex flex-col absolute gap-[2rem] duration-500 ease-in-out opacity-0  ${position}`}
                     key={ind}
+                    ref={slideHeight}
                   >
                     <div className="flex flex-col gap-[0.7rem]">
                       <h2 className="text-[1.4rem] font-extrabold border-l border-blue-600 pl-[0.4rem]">
@@ -122,7 +144,10 @@ const Slide = () => {
           {/* ===================================================================== */}
           {/* Slide card */}
 
-          <div className="flex items-center w-[100%] lg:w-[70%] h-[55vh] lg:h-[45vh] relative overflow-hidden shadow-2xl">
+          <div
+            className="flex items-center w-[100%]   relative overflow-hidden shadow-2xl"
+            style={{ height }}
+          >
             {data.map(({ nav_img, closing_text, background, linear }, ind) => {
               const position = getSlidePosition(
                 ind,
@@ -152,12 +177,12 @@ const Slide = () => {
                     </span>
                   </div>
 
-                  <div className="flex flex-col gap-[1rem] text-white ">
-                    <h2 className="text-[1.5rem] font-extrabold">
+                  <div className="flex flex-col md:gap-[1rem] text-white ">
+                    <h2 className="md:text-[1.5rem] font-extrabold">
                       {closing_text}
                     </h2>
                     <button
-                      className="flex items-center gap-[0.4rem] text-[1rem] font-extrabold w-max capitalize cursor-pointer h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:h-[35px] group-hover:opacity-100"
+                      className="flex items-center gap-[0.4rem] text-[0.9rem] md:text-[1rem] font-extrabold w-max capitalize cursor-pointer h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:h-[35px] group-hover:opacity-100"
                       onClick={() => toast.error("Sorry link is not clickable")}
                     >
                       read more
@@ -214,7 +239,7 @@ const Slide = () => {
                     <img
                       src={ind === index ? img : grayImg}
                       alt={img}
-                      className=" w-[70px] h-[60px] object-contain"
+                      className=" w-[80px] h-[90px] object-contain"
                     />
                   </div>
                 );
