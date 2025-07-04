@@ -10,6 +10,8 @@ import Billing from "../../../assets/Images/Billing.png";
 import Connect from "../../../assets/Images/Connect.png";
 import Issuing from "../../../assets/Images/Issuing.png";
 
+import { toast } from "react-toastify";
+
 const CompanyServices = () => {
   const responsiveScreenSize = window.innerWidth >= 1024;
 
@@ -72,7 +74,10 @@ const CompanyServices = () => {
             </p>
 
             <div>
-              <button className="px-[1rem] py-[0.3rem] bg-indigo-500 text-white font-bold rounded-[15px] text-[0.95rem] flex gap-[0.5rem] transition duration-700 ease-in-out hover:bg-gray-700 group ">
+              <button
+                className="px-[1rem] py-[0.3rem] bg-indigo-500 text-white font-bold rounded-[15px] text-[0.95rem] flex gap-[0.5rem] transition duration-700 ease-in-out hover:bg-gray-700 group cursor-pointer"
+                onClick={() => toast.error(`Sorry , link isn't clickable`)}
+              >
                 Start with Payments
                 <Arrow />
               </button>
@@ -132,7 +137,10 @@ const CompanyServices = () => {
             </p>
 
             <div>
-              <button className="px-[1rem] py-[0.3rem] bg-indigo-500 text-white font-bold rounded-[15px] text-[0.95rem] flex gap-[0.5rem] transition duration-700 ease-in-out hover:bg-gray-700 group ">
+              <button
+                className="px-[1rem] py-[0.3rem] bg-indigo-500 text-white font-bold rounded-[15px] text-[0.95rem] flex gap-[0.5rem] transition duration-700 ease-in-out hover:bg-gray-700 group cursor-pointer"
+                onClick={() => toast.error(`Sorry , link isn't clickable`)}
+              >
                 Start with Billing
                 <Arrow />
               </button>
@@ -192,7 +200,10 @@ const CompanyServices = () => {
             </p>
 
             <div>
-              <button className="px-[1rem] py-[0.3rem] bg-indigo-500 text-white font-bold rounded-[15px] text-[0.95rem] flex gap-[0.5rem] transition duration-700 ease-in-out hover:bg-gray-700 group ">
+              <button
+                className="px-[1rem] py-[0.3rem] bg-indigo-500 text-white font-bold rounded-[15px] text-[0.95rem] flex gap-[0.5rem] transition duration-700 ease-in-out hover:bg-gray-700 group cursor-pointer"
+                onClick={() => toast.error(`Sorry , link isn't clickable`)}
+              >
                 Start with Connect
                 <Arrow />
               </button>
@@ -252,7 +263,10 @@ const CompanyServices = () => {
             </p>
 
             <div>
-              <button className="px-[1rem] py-[0.3rem] bg-indigo-500 text-white font-bold rounded-[15px] text-[0.95rem] flex gap-[0.5rem] transition duration-700 ease-in-out hover:bg-gray-700 group ">
+              <button
+                className="px-[1rem] py-[0.3rem] bg-indigo-500 text-white font-bold rounded-[15px] text-[0.95rem] flex gap-[0.5rem] transition duration-700 ease-in-out hover:bg-gray-700 group cursor-pointer"
+                onClick={() => toast.error(`Sorry , link isn't clickable`)}
+              >
                 Start with Issuing
                 <Arrow />
               </button>

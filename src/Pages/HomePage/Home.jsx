@@ -7,6 +7,9 @@ import {
   Support,
   Enterprise,
   Built,
+  Designed,
+  Launch,
+  Ready,
 } from "./SubPages/main";
 import { useDispatch, useSelector } from "react-redux";
 import Landing from "./SubPages/Landing Component/Landing";
@@ -50,6 +53,12 @@ const Home = () => {
         <Enterprise />
 
         <Built />
+
+        <Designed />
+
+        <Launch />
+
+        <Ready />
 
         {isModalOpen && <MobileModel />}
       </div>

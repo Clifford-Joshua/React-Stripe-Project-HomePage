@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Footer = () => {
   const CurrentYear = new Date().getFullYear();
   return (
-    <Wrapper className="bg-gray-50">
+    <Wrapper className="bg-gray-200">
       {/* =================================================== */}
       {/* div container */}
       <div className=" relative h-[25vh] lg:h-[55vh]">

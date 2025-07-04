@@ -1,15 +1,14 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import styled from "styled-components";
-import { Title, CardContainer } from "./Built Component";
-
-const Built = () => {
+import { useSelector } from "react-redux";
+import { Title, CardContainer } from "./Launch Component";
+const Launch = () => {
   const responsiveScreenSize = window.innerWidth >= 1024;
 
   const { navWidth } = useSelector((store) => store.NavBar);
 
   return (
-    <Wrapper className="flex flex-col justify-center items-center bg-slate-50 py-[4rem] pb-[8rem] gap-[2rem] ">
+    <Wrapper className="flex flex-col justify-center items-center bg-slate-50 py-[6rem] gap-[2rem]">
       <div
         style={{
           width:
@@ -42,4 +41,4 @@ const Wrapper = styled.div`
   /* ====================================================== */
 `;
 
-export default Built;
+export default Launch;

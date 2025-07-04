@@ -34,8 +34,8 @@ const Title = () => {
                 placeholder="Email address"
               />
 
-              <Link className="flex items-center justify-center gap-[0.3rem] border rounded-[2rem] lg:text-[1rem]  px-[0.7rem] py-[0.3rem] text-white bg-slate-950 group hover:bg-slate-500">
-                <h4 className="font-extrabold">Start now</h4>
+              <Link className="flex items-center justify-center gap-[0.3rem] border rounded-[2rem] text-[0.9rem] lg:text-[1rem]  px-[0.7rem] py-[0.3rem] text-white bg-slate-950 group hover:bg-slate-500">
+                <h4 className="font-bold">Start now</h4>
                 <Arrow />
               </Link>
             </div>

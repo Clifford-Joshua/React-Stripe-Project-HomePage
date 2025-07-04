@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { toast } from "react-toastify";
 import Arrow from "../../../../Components/Button/Arrow";
 
-const CardDesign = ({ title, text, btn, color, icon, AtlasHome }) => {
+const CardDesign = ({ title, text, btn, color, icon, AtlasHome, height }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <Wrapper
@@ -14,7 +14,9 @@ const CardDesign = ({ title, text, btn, color, icon, AtlasHome }) => {
         setIsHovered(false);
       }}
     >
-      <div className="h-[450px] rounded-[10px] shadow-2xl shadow-gray-800 p-[0.4rem] bg-white group/bgcolor cursor-pointer">
+      <div
+        className={`h-[${height}px]  rounded-[10px] shadow-2xl shadow-gray-800 p-[0.4rem] bg-white group/bgcolor cursor-pointer`}
+      >
         <div
           className="h-[55%] rounded-[10px] flex items-end justify-end overflow-hidden transition-all duration-500 ease-in-out  group-hover/bgcolor:h-[43%]"
           style={{
@@ -29,11 +31,14 @@ const CardDesign = ({ title, text, btn, color, icon, AtlasHome }) => {
           />
         </div>
         <div className="flex flex-col gap-[1rem] p-[1rem]">
-          <img
-            src={icon}
-            alt={title}
-            className="w-[100px] h-[25px] object-cover"
-          />
+          {icon && (
+            <img
+              src={icon}
+              alt={title}
+              className="w-[100px] h-[25px] object-cover"
+            />
+          )}
+
           <h2 className="font-bold text-[1.5rem] text-gray-800">{title}</h2>
           <p className="text-gray-500 font-[500] text-[1.15rem]">{text}</p>
 
