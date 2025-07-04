@@ -226,7 +226,7 @@ const Slide = () => {
               {data.map(({ color, grayImg, img }, ind) => {
                 return (
                   <div
-                    className="flex flex-col items-center justify-between h-[80px] cursor-pointer"
+                    className="flex flex-col items-center justify-between h-[100px] border cursor-pointer"
                     key={ind}
                     onClick={() => setIndex(ind)}
                   >
