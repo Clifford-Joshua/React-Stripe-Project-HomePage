@@ -23,7 +23,7 @@ const CardContainer = () => {
               btn: "Learn about Atlas",
               color:
                 "linear-gradient(to right,#f6f9fc,rgba(255, 166, 0, 0.695),rgba(255, 166, 0, 0.792))",
-              height: 450,
+              height: 500,
             }}
           />
 
@@ -36,7 +36,7 @@ const CardContainer = () => {
               btn: "Start with Checkout",
               color:
                 "linear-gradient(to right,#f6f9fc,rgba(0, 0, 255, 0.338),rgba(0, 0, 255, 0.77))",
-              height: 450,
+              height: 500,
             }}
           />
         </div>
@@ -51,7 +51,7 @@ const CardContainer = () => {
               btn: "Try Payment Links",
               color:
                 "linear-gradient(to right,#f6f9fc,rgba(40, 255, 25, 0.338),rgba(40, 255, 25, 0.77))",
-              height: 450,
+              height: 500,
             }}
           />
 
@@ -64,7 +64,7 @@ const CardContainer = () => {
               btn: "Explore invoicing",
               color:
                 "linear-gradient(to right,#f6f9fc,rgba(200, 80, 25, 0.338),rgba(200, 80, 25, 0.77))",
-              height: 450,
+              height: 500,
             }}
           />
         </div>
